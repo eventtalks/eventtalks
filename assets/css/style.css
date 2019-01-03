@@ -1,0 +1,177 @@
+/*#7A392C;*/
+/*#48647C*/
+
+body{
+	background-color: white;
+	padding: 0;
+	margin: 0;
+}
+
+/* ------------------------------------------------- NAVBAR ------------------------------------ */
+.nav-image{
+	width: 10vh;
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+  	margin-right: -10%;
+}
+.nav-title{
+	font-family: 'Concert One', cursive;
+	font-size: 40px;
+}
+.nav-motto{
+	font-size: 11px;
+	font-family: 'Raleway', sans-serif;
+	color: black;
+}
+
+/* ------------------------------------------- NAVBAR MENU ------------------------------------- */
+.homeLI a {
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #A4A4A4;
+}
+.homeLI a:hover:not(.active) {
+  color: white;
+}
+a.active {
+  color: white;
+}
+.container-fluid{
+	padding: 0;
+	margin: 0;
+}
+.nav-default{
+	background-color: #48647C;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	width: 100%;
+}
+
+/* ------------------------------------------- NAVBAR SEARCH BAR------------------------------ */
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	margin-right: 30px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #66CC75;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+/*------------------------------------- Demo 2 CLASS ---------------------------------*/
+#demo-2 input[type=search] {
+	width: 20px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+	background-color: #fff;
+}
+#demo-2 input[type=search]:focus {
+	width: 200px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+/* -------------------------------- FOOTER -------------------------------*/
+#footer-main{
+  background: #1C1C1C;
+  color: white;
+  font-size: 0.8rem;
+  padding: 1.5rem 1rem;
+  list-style: none;
+}
+#footer-main a{
+  list-style: none;
+  color: white;
+}
+.footer-hr{
+	background-color: #A4A4A4; 
+	height: 1px; 
+	border: 0;
+}
+
+/* -------------------------------- FOOTER SOCIAL MEDIA ICONS-------------------------------*/
+.footer-socialM{
+	width: 35px;
+	display: inline-block;
+	margin-right: 2%;
+}
+
+/* -------------------------------- FOOTER TEXT TITLE-------------------------------*/
+.footer-title{
+	font-size: 14px;
+ 	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color: #A4A4A4;
+}
+/* -------------------------------- FOOTER TEXT OTHER TEXT -------------------------------*/
+.footer-titleUP{
+	font-size: 12px;
+ 	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	color: #A4A4A4;
+}
+
+.footer-titleMENU{
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	color: white;
+}
+
+/* ---------------------------------- FOOTER BUTTON ---------------------------------*/
+.footer-button{
+	color: black;
+	font-size: 13px;
+	padding: 7px 20px 7px 20px;
+  font-family: 'Raleway', sans-serif;
+}
+.footer-button:hover{
+	color: black;
+	background-color: 
+}
