@@ -1,10 +1,13 @@
 /*#7A392C;*/
 /*#48647C*/
 
-body{
-	background-color: white;
-	padding: 0;
-	margin: 0;
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html,body{
+  height: 100%;
 }
 
 /* ------------------------------------------------- NAVBAR ------------------------------------ */
@@ -23,17 +26,20 @@ body{
 	font-family: 'Raleway', sans-serif;
 	color: black;
 }
+.navbar{
+	position: fixed;
+}
 
 /* ------------------------------------------- NAVBAR MENU ------------------------------------- */
 .homeLI a {
-  text-align: center;
   font-size: 16px;
   text-decoration: none;
   font-family: 'Raleway', sans-serif;
-  color: #A4A4A4;
+  color: #1C1C1C;
 }
 .homeLI a:hover:not(.active) {
   color: white;
+  background-color: #48647C;
 }
 a.active {
   color: white;
@@ -44,9 +50,6 @@ a.active {
 }
 .nav-default{
 	background-color: #48647C;
-	padding: 0;
-	margin: 0;
-	top: 0;
 	width: 100%;
 }
 
@@ -94,7 +97,7 @@ input::-webkit-input-placeholder {
 	color: #999;
 }
 
-/*------------------------------------- Demo 2 CLASS ---------------------------------*/
+/*------------------------------------- Demo 2 CLASS -- STILL FOR SEARCH BAR ---------------------------------*/
 #demo-2 input[type=search] {
 	width: 20px;
 	padding-left: 10px;
@@ -117,6 +120,224 @@ input::-webkit-input-placeholder {
 #demo-2 input::-webkit-input-placeholder {
 	color: transparent;
 }
+
+/* -------------------------------------------- EVENT TALKS CATEGORY ------------------------------------------*/
+/* 4 PANEL TIMELINE STYLE */
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+          transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) translateY(0);
+          transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.tl-content {
+  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+          transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #1779cf; /*CATEGORY SUB-TITLE TEXT COLOR*/
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.tl-year p {
+  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+  margin-top: 1.200rem;
+  margin-bottom: 1rem;
+  color: white; /*CATEGORY TITLE TEXT COLOR*/
+}
+
+.tl-bg {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+/* --------------------------------------- NAVBAR DROPDOWN ---------------------------------------*/
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    max-height: 200px;
+    opacity: 1;
+}
+
+/* ---------------------------------------------- ABOUT CONTENT----------------------------------------*/
+.about-hr{
+	background-color: #A4A4A4; 
+	height: 2px; 
+	border: 0;
+}
+
+.about-content{
+	position: relative;
+	top: 20vh;
+}
+
+/* for <p> alignment */
+.lead, .card-text{
+	text-align: justify;
+}
+
+/* for mission vision partners about us TEXT */
+.about-title{
+	font-family: 'Titan One', cursive;
+}
+
+.about-missionVision, .about-partners{
+	padding: 6rem 6rem;
+}
+
+/*PARTNERS IMAGE*/
+.about-img{
+	width: 13%;
+	display: inline-block;
+	margin-right: 5%;
+	padding-top: 2%;
+}
+.about-img1{
+	width: 13%;
+	display: inline-block;
+	margin-right: 5%;
+	padding-top: 5%;
+}
+
+
+/* ---------------------------------------------- ABOUT PARALLAX -------------------------*/
+.about{
+  opacity: 1;
+  background-color: black;
+  background: url("https://cdn-images-1.medium.com/max/1600/1*e5flIoQf_jfcYYoSD0MkyA.jpeg") center center no-repeat;
+  min-height: 100vh;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*FOR DARKER COLOR OF BACKGROUND*/
+#dark{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.5);
+}
+
+/* ---------------------------------------------- OUR TEAM -------------------------*/
+.about-ourTeam{ /*PARALLAX*/
+  opacity: 1;
+  background-color: black;
+  background: url("https://prod-marketing-greenhouse.global.ssl.fastly.net/blog-assets/Hands_Huddle.jpg?mtime=20160426024504") center center no-repeat;
+  min-height: 800px;
+  padding: 6rem 6rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
@@ -174,4 +395,64 @@ input::-webkit-input-placeholder {
 .footer-button:hover{
 	color: black;
 	background-color: 
+}
+
+/* ---------------------------------- BACK TO TOP BUTTON ---------------------------------*/
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(72, 100, 124, 1) url("../images/cd-top-arrow.svg") no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .5;
+}
+
+.cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
 }
