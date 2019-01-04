@@ -162,30 +162,228 @@ body {
 
 
 /* HOME GRID RANDOM */
+/*---------------------*/
 #home-grid
 {
 	padding: 30px 0;
 	position: relative;
 }
 
+.flexgrid
+{
+    -webkit-flex-flow: wrap;
+    -moz-flex-flow: wrap;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+}
+
+/*first column flex*/
+.fc-flex
+{
+ width: 25%;
+}
+/*second column flex*/
+.sc-flex
+{
+  width: 40%;
+}
+/*third column flex*/
+.tc-flex
+{
+  width: 30%;
+}
+
+
+
+
+
+.cardEvent2
+{
+
+  margin-top: -80px;
+  max-height: 360px;
+  max-width: 25%;
+}
+
+.cardEvent3
+{
+  max-height: 170px;
+}
 #imgVid
 {
 	background-image: url('./images/eventbonfire.jpg');
 	background-repeat: no-repeat;
 	background-position: center;
-	    min-height: 230px;
-    width: 40%;
+	min-height: 230px;
+  position: relative;
+}
+#imgVid2
+{
+  background-image: url('./images/futureEvents.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 150px;
+
+  position: relative;
 }
 
+#imgWcat
+{
+  background-image: url('./images/futureEvents.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 270px;
+
+  position: relative;
+
+}
+#imgVidbtn
+{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  
+  width: 120px; 
+  height: 120px;
+}
 #pahiramLogo 
 {
-	background-color: gray;
+  justify-content: center;
+  text-align: center;
+	background-color: white;
 	height: 150px;
-	width: 20%;
+
+}
+#pahiramLogo2
+{
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 170px;
+  width: 25%;
+}
+#pahiramLogo3
+{
+  justify-content: center;
+  text-align: center;
+  background-color: #e9edef;
+  height: 170px;
+  width: 25%;
+
+}
+#pahiramLogo4
+{
+  justify-content: center;
+  text-align: center;
+  background-color: #e7a7a7;
+  height: 170px;
+  width: 25%;
+  margin-left: 25%;
+  margin-top: -100px;
+}
+#pahiramLogo5
+
+{
+  justify-content: center;
+  text-align: center;
+  background-color: #6a5959;
+  height: 170px;
+  width: 25%;
+
+  margin-top: -100px;
 }
 
+.cardEvent img
+{
+  background-color: white;
+  height: 50px;
+  width: 4rem;
+}
 #pahiramLogo img
 {
+  background-color: white;
 	height: 50px;
 	width: 4rem;
 }
+
+.hoverpop:hover 
+{
+       -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    z-index: 99;
+}
+.hoverpop
+{
+      -webkit-transition: transform 250ms ease-in-out;
+    -o-transition: transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;    
+}
+
+.txt
+{
+  background: rgba(255, 255, 255, 0.88);
+    padding: 15px 26px 22px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute; 
+}
+.txtcategory
+{
+      font-size: 14px;
+    font-size: 5.46875%/pxrem;
+    color: #292929;
+    position: absolute;
+    right: 15px;
+    top: -13px;
+    text-decoration: none;
+}
+.txtcategory span 
+{
+  background-color: #2f87e5;
+
+}
+
+
+.social.twitter
+{
+  background-image: url('images/twitter.png');
+  background-color: black;
+  background-size: 40px auto;
+  left: -110px;
+  right: auto;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+#cardCol
+{
+  margin:0;
+  padding: 0;
+}
+
+.card 
+{
+  margin: 0;
+  padding: 0;
+}
+/* .twitter 
+{
+      -webkit-transition: opacity 150ms ease-in-out;
+    -o-transition: opacity 150ms ease-in-out;
+    transition: opacity 150ms ease-in-out;
+    background: #333 no-repeat center center;
+    position: absolute;
+    display: none;
+    height: 100px;
+    width: 100px;
+    left: auto;
+    bottom: 0;
+    position: absolute;
+    right: -100px;
+}*/
