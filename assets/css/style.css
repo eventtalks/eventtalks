@@ -21,14 +21,6 @@ html,body{
 	font-family: 'Concert One', cursive;
 	font-size: 40px;
 }
-.nav-motto{
-	font-size: 11px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-}
-.navbar{
-	position: fixed;
-}
 
 /* ------------------------------------------- NAVBAR MENU ------------------------------------- */
 .homeLI a {
@@ -39,18 +31,29 @@ html,body{
 }
 .homeLI a:hover:not(.active) {
   color: white;
+}
+
+.homeLI1 a {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #1C1C1C;
+}
+.homeLI1 a:hover:not(.active) {
+  color: white;
   background-color: #48647C;
 }
+
 a.active {
   color: white;
 }
-.container-fluid{
-	padding: 0;
-	margin: 0;
-}
-.nav-default{
-	background-color: #48647C;
-	width: 100%;
+
+/* ------------------------------------------- ON SCROLL NAVBAR MENU ------------------------------------- */
+.navbar-solid {
+  background-color: #48647C;
+  top:0px;
+  z-index:100;
+  width: 100%;
 }
 
 /* ------------------------------------------- NAVBAR SEARCH BAR------------------------------ */
@@ -257,11 +260,23 @@ input::-webkit-input-placeholder {
     display: block;
     overflow: hidden;
     opacity: 0;
+    /*background: transparent;
+    border: none;*/
 }
 
 .dropdown:hover .dropdown-menu {
     max-height: 200px;
     opacity: 1;
+}
+
+/* ------------------------------------------ REGISTER BUTTON ---------------------------------------*/
+.register-button{
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px 10px 15px;
+}
+.register-button:hover{
+  background-color: #48647C;
 }
 
 /* ---------------------------------------------- ABOUT CONTENT----------------------------------------*/
@@ -283,12 +298,52 @@ input::-webkit-input-placeholder {
 
 /* for mission vision partners about us TEXT */
 .about-title{
-	font-family: 'Titan One', cursive;
+  color: white;
+  font-size: 45px;
+}
+
+.about-title1{
+  color: black;
+  font-size: 45px;
+}
+
+.about-cover-text{
+  font-size: 18px;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.btn-round{
+  margin-top: 5%;
+  border-radius: 50%;
+  padding: 20px;
+  width: 70px;
+  border: 1px solid white;
+}
+
+.mic-down:hover{
+    transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+}
+
+.mic-down{
+  width: 100%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+          transition:         transform .4s ease-in-out;
 }
 
 .about-missionVision, .about-partners{
 	padding: 6rem 6rem;
 }
+
+.about-cover-content{
+ padding-top: 15rem;
+ text-align: center;
+}
+
+.about-img-whatwedo{
+  width: 50%;}
 
 /*PARTNERS IMAGE*/
 .about-img{
@@ -304,24 +359,73 @@ input::-webkit-input-placeholder {
 	padding-top: 5%;
 }
 
-
-/* ---------------------------------------------- ABOUT PARALLAX -------------------------*/
-.about{
-  opacity: 1;
-  background-color: black;
-  background: url("https://cdn-images-1.medium.com/max/1600/1*e5flIoQf_jfcYYoSD0MkyA.jpeg") center center no-repeat;
+.dark{
+  min-width: 100%;
   min-height: 100vh;
-  color: white;
+  background: rgba(0,0,0,0.5);
+}
+
+
+/* ---------------------------------------------- ABOUT PARALLAX --------------------------------------------*/
+/*FOR DARKER COLOR OF BACKGROUND*/
+#dark{
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+/* Video Parallax Section*/
+.ParallaxVideo{ 
+  height: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  min-width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top:0;
+  z-index: -9999;
+}
+.ParallaxVideo h3 {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.parallax2 {
+  opacity: 1;
+  min-height: 600px; 
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+#MissionAndVision{
+  opacity: 1;
+  background-color: white;
+  min-height: 90vh;
+  color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-/*FOR DARKER COLOR OF BACKGROUND*/
-#dark{
-  width: 100%;
+
+/* ---------------------------------------------- WHAT WE DO -------------------------*/
+#WhatWeDo{
+  opacity: 1;
+  color: white;
+  background-color: black;
+  background: rgba(0,0,0,0.7) url("https://www.worktechacademy.com/content/uploads/2016/08/AdobeStock_64564512.jpeg") center center no-repeat;
   min-height: 100vh;
-  background: rgba(0,0,0,0.5);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 /* ---------------------------------------------- OUR TEAM -------------------------*/
@@ -336,8 +440,6 @@ input::-webkit-input-placeholder {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
 
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
