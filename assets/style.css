@@ -348,7 +348,7 @@ body {
 }*/
 
 
- /*CARD COLUMNS HOMEGRID */
+ /* ------------- CARD COLUMNS HOMEGRID ---------------------*/
 #home-cards
 {
   padding: 10px 10px;
@@ -372,6 +372,44 @@ body {
   margin-right: 0px;
   margin-left: 0px;
 }
+/* ----- 1ST CARD GROUP H&W ----- */
+div.col-lg-3
+{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+div.col-lg-6
+{
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+/*#f-card-group
+{
+  height: 260px;
+}
+#f-event-d
+{
+  width: 270px;
+}
+#f-img-cat
+{
+  width: 450px;
+}
+#f-sponsor
+{
+  width: 360px;
+  height: 200px;
+}*/
+/* ----- 1ST CARD GROUP H&W ----- */
+
+
+
+
+
     /*card for event details*/
     #card7th
     {
@@ -382,6 +420,10 @@ body {
       background-color: #d4e3f3;
     }    
     /*card for sponsors*/
+    #fsponsor
+    {
+      max-height: 200px;
+    }
     .sponsor
     {
       position: relative;
@@ -466,7 +508,7 @@ body {
         transition: transform 250ms ease-in-out;    
     }
 
-/*SOCIAL MEDIA ICON */
+/* ------------------------SOCIAL MEDIA ICON ----------------------*/
 .social.twitter
 {
   background-image: url('images/twitter.png');
@@ -692,4 +734,27 @@ a[ id= "galeria" ]:target ~ #main article.panel {
 a[ id= "contacto" ]:target ~ #main article.panel {
     -webkit-transform: translateY( -1000px );
     transform: translateY( -1000px );
+}
+
+
+/* ----------------- ANOTHER TRY FOR CARDS GRID ---------------------*/
+
+#fscard
+{
+  background-image: url('images/800x400.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: 160px;
+  max-width: 350px;
+}
+
+#Sscard
+{
+  background-image: url('images/800x400.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  top: -75px;
+  max-height: 300px;
+  max-width: 350px;
 }
