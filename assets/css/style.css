@@ -10,6 +10,8 @@ html,body{
   height: 100%;
 }
 
+
+
 /* ------------------------------------------------- NAVBAR ------------------------------------ */
 .nav-image{
 	width: 10vh;
@@ -292,19 +294,30 @@ input::-webkit-input-placeholder {
 }
 
 /* for <p> alignment */
-.lead, .card-text{
-	text-align: justify;
+.lead{
+  font-size: 24px;
+  text-align: justify;
+  color: #2E2E2E;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-home{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 40px;
 }
 
 /* for mission vision partners about us TEXT */
 .about-title{
-  color: white;
+  color: #1C1C1C;
   font-size: 45px;
+  font-family: 'Titan One', cursive;
 }
 
 .about-title1{
-  color: black;
+  color: #1C1C1C;
   font-size: 45px;
+  font-family: 'Titan One', cursive;
 }
 
 .about-cover-text{
@@ -333,7 +346,15 @@ input::-webkit-input-placeholder {
           transition:         transform .4s ease-in-out;
 }
 
-.about-missionVision, .about-partners{
+.btn-round1{ /*mission vision*/
+  margin-top: 5%;
+  border-radius: 50%;
+  padding: 20px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+.about-missionVision, .about-partners, .about-whatWedo{
 	padding: 6rem 6rem;
 }
 
@@ -342,9 +363,11 @@ input::-webkit-input-placeholder {
  text-align: center;
 }
 
-.about-img-whatwedo{
-  width: 50%;}
+.content-padding{
+  padding: 4rem 4rem;
+}
 
+/* ----------------------- PARTNERS ---------------------------*/
 /*PARTNERS IMAGE*/
 .about-img{
 	width: 13%;
@@ -355,16 +378,24 @@ input::-webkit-input-placeholder {
 .about-img1{
 	width: 13%;
 	display: inline-block;
-	margin-right: 5%;
+	margin-right: 10%;
 	padding-top: 5%;
+}
+
+#Partners{
+  background-color: white;
+  max-height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dark{
   min-width: 100%;
   min-height: 100vh;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.8);
 }
-
 
 /* ---------------------------------------------- ABOUT PARALLAX --------------------------------------------*/
 /*FOR DARKER COLOR OF BACKGROUND*/
@@ -404,10 +435,8 @@ input::-webkit-input-placeholder {
 } 
 
 #MissionAndVision{
-  opacity: 1;
   background-color: white;
   min-height: 90vh;
-  color: black;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -416,29 +445,89 @@ input::-webkit-input-placeholder {
 
 /* ---------------------------------------------- WHAT WE DO -------------------------*/
 #WhatWeDo{
-  opacity: 1;
-  color: white;
-  background-color: black;
-  background: rgba(0,0,0,0.7) url("https://www.worktechacademy.com/content/uploads/2016/08/AdobeStock_64564512.jpeg") center center no-repeat;
+  background-color: white;
   min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
+.about-img-whatwedo{
+  width: 50%;
+}
+
+/* for card-text content */
+.card-text{
+  font-size: 20px;
+  text-align: justify;
+  color: #1C1C1C;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.whatwedo-content{
+  font-size: 20px;
+  text-align: justify;
+  color: #1C1C1C;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.card-whatwedo{
+  background: none;
+  border: none;
+}
 /* ---------------------------------------------- OUR TEAM -------------------------*/
 .about-ourTeam{ /*PARALLAX*/
   opacity: 1;
-  background-color: black;
-  background: url("https://prod-marketing-greenhouse.global.ssl.fastly.net/blog-assets/Hands_Huddle.jpg?mtime=20160426024504") center center no-repeat;
+  background-color: white;
   min-height: 800px;
-  padding: 6rem 6rem;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.team-img{
+    width: 100%;
+    height: 20vw;
+    /*padding: 1rem;*/
+    object-fit: cover;
+}
+
+
+/* ----------------------------------- CONTACT US --------------------------------*/
+.contact{ /*PARALLAX*/
+  background: url("https://static1.squarespace.com/static/50e73071e4b0d5ee8b74f584/t/5a0df5170d9297da4e01c3b8/1510864152047/contact_us.jpg?format=2500w") center center no-repeat;
+  min-height: 60vh;
+  color: white;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Contact Us TEXT*/
+.contact-title{
+  padding-top: 15%;
+  text-align: left;
+  color: white;
+  font-size: 60px;
+  font-family: 'Raleway';
+}
+
+.contact-dark{
+  min-width: 100%;
+  min-height: 60vh;
+  background: rgba(0,0,0,0.8);
+}
+
+.lead1{
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
 }
 
 /* -------------------------------- FOOTER -------------------------------*/
