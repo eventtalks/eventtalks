@@ -85,49 +85,104 @@
       </div>
     </section>
 
-	<section>
+	<section id="ContactUs" class="contactus">
 		<div>
-			<div class="container">
+			<div class="container" style="margin-right: 0;">
 		        <div class="row">
-		            <form>
-		            	<div class="form-group">
-		            		<div class="row">
-							    <div class="col">
-									<label for="fname">First Name</label>
-								    	<input id="fname" type="text" class="form-control" placeholder="">
-							    </div>
-							    <div class="col">
-									<label for="lname">Last Name</label>
-							      		<input id="lname" type="text" class="form-control" placeholder="">
-							    </div>
+            		<div class="col-md-8 contact-form">
+              		<h1 class="contact-title1"><b>Send us a Message</b>
+              		<img src="assets/images/email.png" align="right" alt="mail icon" class="contact-mailImg"></h1>
+              		<br>
+              		<br>
+			            <form>
+			            	<div class="form-group">
+			            		<div class="row">
+								    <div class="col">
+										<label for="fname">First Name</label>
+									    	<input id="fname" type="text" class="form-control" aria-describedby="firstnameHelp" placeholder="">
+								    </div>
+								    <div class="col">
+										<label for="lname">Last Name</label>
+								      		<input id="lname" type="text" class="form-control" aria-describedby="lastnameHelp" placeholder="">
+								    </div>
+								</div>
+			            	</div>
+
+							<div class="form-group">
+								<div class="row">
+								    <div class="col">
+										<label for="Email">E-mail</label>
+							    			<input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="">
+								    </div>
+
+								    <div class="col">
+										<label for="Company">Company / Organization</label>
+							    	<input type="email" class="form-control" id="Company" aria-describedby="CompanyHelp" placeholder="">
+								    </div>
+								</div>
+								
 							</div>
-		            	</div>
-		            	
-						<div class="form-group">
-							<label for="exampleInputEmail1">Company / Organization</label>
-						    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-						    		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-						</div>
 
-						<div class="form-group">
-							<label for="exampleInputEmail1">Phone</label>
-						    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-						    		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-						</div>
+							<!-- <div class="form-group">
+								<div class="row">
+								    <div class="col">
+										<label for="Phone">Phone</label>
+									    	<div class="input-group mb-3">
+											  	<div class="input-group-prepend">
+											    	<span class="input-group-btn">
+												        <select class="selectpicker" data-style="selectpicker-btn">
+												            <option>Select</option>
+												            <option value="+995">+995</option>
+												            <option value="+93">+93</option>
+												            <option value="+358">+358</option>
+												            <option value="+355">+355</option>
+												            <option value="+62">+62</option>
+												            <option value="+98">+98</option>
+												            <option value="+687">+687</option>
+												            <option value="+63">+63</option>
+												        </select>
+												    </span>
+											  	</div>
+									  			<input type="text" class="form-control" required id="Phone" aria-describedby="PhoneHelp">
+											</div>
+								    </div>
 
-						<div class="form-group">
-							<label for="exampleInputEmail1">E-mail</label>
-						    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-						    		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-						</div>
+								    <div class="col">
+										<label for="Email">E-mail</label>
+							    			<input type="email" class="form-control" required id="Email" aria-describedby="emailHelp" placeholder="">
+								    </div>
+								</div>
+								
+							</div> -->
 
-						<div class="form-group">Message</label>
-						    	<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
-						    		<!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
-						</div>
+							<div class="form-group">Message</label>
+								<textarea id="Message" class="form-control" rows="5" cols="10" style="resize:none;"  aria-describedby="MessageHelp"></textarea>
+							</div>
 
-					  	<button type="submit" class="btn btn-primary">Submit</button>
-					</form>
+							<a href=""><button class="btn btn-outline-dark contact-sendbtn"><img src="assets/images/send.png" class="contact-sent" onmouseover="this.src='assets/images/send1.png';" onmouseout="this.src='assets/images/send.png';"></button></a>
+
+						</form>
+					</div>
+
+					<div class="col-md-4 contact-form1">
+              		<center><h1 class="contact-title2"><b>Contact Information</b></h1></center>
+	              		<div class="contact-details">
+				            <img src="assets/images/placeholder.png" class="contact-icon">
+				            <p class="contact-info">2128 Studio Residence 2,<br> Nuestra Seniora de Guadalupe, Makati CIty, Metro Manila</p>
+				           
+				            <img src="assets/images/smartphone.png" class="contact-icon">
+				            <p class="contact-info1">(02) 954 1057</p>
+				           
+				            <img src="assets/images/email1.png" class="contact-icon" style="padding-top: 1rem;">
+				            <p class="contact-info1">corporate@pahiram.ph</p>
+
+				            <br><br>
+
+				            <a href="https://www.facebook.com/pahiram.ph/"><img class="contact-socialM" src="assets/images/fb.png" alt="facebook"></a>
+				            <a href=""><img class="contact-socialM" src="assets/images/twit.png" alt="twitter"></a>
+				            <a href=""><img class="contact-socialM" src="assets/images/insta.png" alt="instagram"></a>
+	              		</div>
+					</div>
 		        </div>
 	        </div>
 		</div>
@@ -165,10 +220,9 @@
           
           <div class="col-sm-4">
             <h6 class="footer-title"><b>SOCIAL MEDIA</b></h6>
-            <a href="https://www.facebook.com/pahiram.ph/"><img class="footer-socialM" src="assets/images/facebook.png" alt="facebook"></a>
-            <a href=""><img class="footer-socialM" src="assets/images/twitter.png" alt="twitter"></a>
-            <a href=""><img class="footer-socialM" src="assets/images/instagram.png" alt="instagram"></a>
-            <a href=""><img class="footer-socialM" src="assets/images/google-plus.png" alt="google-plus"></a>
+            <a href="https://www.facebook.com/pahiram.ph/"><img class="footer-socialM" src="assets/images/fb.png" alt="facebook"></a>
+            <a href=""><img class="footer-socialM" src="assets/images/twit.png" alt="twitter"></a>
+            <a href=""><img class="footer-socialM" src="assets/images/insta.png" alt="instagram"></a>
 
             <br>
             <br>
@@ -297,7 +351,10 @@
  
             });
         } ) ( jQuery );
+
+        $(".selectpicker").selectpicker();
     </script>
 
+</div>
 </body>
 </html>
