@@ -139,7 +139,7 @@ body {
 
 
 /*PICTURES AND VIDEOS DIV */
-#pictureRow
+/*#pictureRow
 {
 	height: 50vh;
 	background-color: #df9a9a;
@@ -159,11 +159,11 @@ body {
 {
 	height: 100vh;
 }
-
+*/
 
 /* HOME GRID RANDOM */
 /*---------------------*/
-#home-grid
+/*#home-grid
 {
 	padding: 30px 0;
 	position: relative;
@@ -175,24 +175,24 @@ body {
     -moz-flex-flow: wrap;
     -ms-flex-flow: wrap;
     flex-flow: wrap;
-}
+}*/
 
 /*first column flex*/
-.fc-flex
+/*.fc-flex
 {
  width: 25%;
-}
+}*/
 /*second column flex*/
-.sc-flex
+/*.sc-flex
 {
   width: 40%;
-}
+}*/
 /*third column flex*/
-.tc-flex
+/*.tc-flex
 {
   width: 30%;
-}
-
+}*/
+/*
 
 
 
@@ -330,7 +330,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+*/
 /* .twitter 
 {
       -webkit-transition: opacity 150ms ease-in-out;
@@ -356,7 +356,7 @@ body {
 
 #home-container
 {
-  padding: 10px 10px; 
+  padding: 20px 20px; 
 }
 #cardCol
 {
@@ -373,69 +373,199 @@ body {
   margin-left: 0px;
 }
 /* ----- 1ST CARD GROUP H&W ----- */
-div.col-lg-3
+#home-cards,div.col-lg-3
 {
   margin-right: 0px;
   margin-left: 0px;
   padding-right: 0px;
   padding-left: 0px;
 }
-div.col-lg-6
+#home-cards,div.col-lg-6
 {
   margin-right: 0px;
   margin-left: 0px;
   padding-right: 0px;
   padding-left: 0px;
 }
-/*#f-card-group
+#home-cards,div.col-lg-5, .col-md-5
 {
-  height: 260px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#f-card-group
+{
+  margin-left: 10px;
+  margin-right: 10px;
+
 }
 #f-event-d
 {
-  width: 270px;
-}
-#f-img-cat
-{
-  width: 450px;
+ height:  200px;
+ background-color: #d4e3f3;
 }
 #f-sponsor
 {
-  width: 360px;
-  height: 200px;
+  /*width: 360px;*/
+  height: 150px;
+}
+.f-sponsorImg
+    {
+      height: 100px;
+    }
+/*#f-img-cat
+{
+  width: 450px;
 }*/
-/* ----- 1ST CARD GROUP H&W ----- */
+
+/* ----- 2ND CARD GROUP H&W ----- */
+#s-card-group
+{
+  margin-left: 12px;
+  margin-right: 12px;
+  /*height: 180px;*/
+}
+#s-event-d
+{
+  margin-top: -52px;
+  max-height: 310px;
+  background-color: #9ea3a7;
+  color: black;
+
+}
+#cardImgWbtn
+{
+  background-image: url('images/futureEvents.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 260px;
+}
+#fsponsor
+{
+  height: 260px;
+  text-align: center;
+}
+
+/* ----- 3RD CARD GROUP H&W ----- */
+#t-card-group
+{
+    margin-left: 12px;
+  margin-right: 12px;
+}
+
+#s-img-cat
+{
+  height: 280px;
+}
+
+#t-sponsor
+{
+  height: 155px;
+}
+#card7th
+{
+  height: 155px;
+  background-color: #d4e3f3;
+}
+
+/* ----- 4TH CARD GROUP H&W ----- */
+#fo-card-group
+{
+  margin-left: 236px;
+  margin-top: -126px;
+  margin-right: 12px;
+
+}
+    @media(max-width: 990px)
+    {
+       #fo-card-group
+       {
+         margin-left: 175px;
+          margin-top: -126px;
+       }
+    }
+    @media(max-width: 767px)
+    {
+
+       #fo-card-group
+       {
+         margin-left: 12px;
+         margin-right: 12px;
+        margin-top: 0px;
+       }
+       #t-sponsor
+       {
+        height: 230px;
+        margin-top: 0px;
+       }
 
 
+    }
+    @media(max-width: 605px)
+    {
+       .social
+       {
+        display: none;
+       }
+    }
+#cardImgWbtn2
+{
+  background-image: url('images/futureEvents.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 160px;
+}    
+#fo-sponsor
+{
+  height: 160px;
+}
+#fi-sponsor
+{
+  height: 160px;
+}
+    @media(max-width: 767px)
+    {
+      #fo-sponsor
+      {
+        height: 240px;
+      }
+      #fi-sponsor
+      {
+        height: 240px;
+      }
+    }
 
-
+#fi-sponsor span
+{
+    position: relative;
+  top: 0px;
+  font-size: 0.800em;
+  color: white;
+  width: 50%;
+  margin-left: 25%;
+}
 
     /*card for event details*/
-    #card7th
-    {
-      background-color: #d4e3f3;
-    }
+
     #card9th
     {
       background-color: #d4e3f3;
     }    
     /*card for sponsors*/
-    #fsponsor
-    {
-      max-height: 200px;
-    }
+
     .sponsor
     {
       position: relative;
       top: 0px;
       font-size: 0.800em;
       color: white;
+      width: 50%;
+      margin-left: 25%;
 
     }
-    .sponsorImg
-    {
-      height: 130px;
-    }
+
+
     /*card of img with category*/
     .imgCategory
     {
@@ -469,13 +599,7 @@ div.col-lg-6
     }
 
     /*card for img with playbutton*/
-    #cardImgWbtn
-    {
-      background-image: url('images/futureEvents.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 230px;
-    }
+    
     .playbtn
     {
       width: 50px;
@@ -517,7 +641,7 @@ div.col-lg-6
   background-position: center;
   background-size: 50px auto;
   left: -60px;
-  top: 73px;
+  top: 137px;
   right: auto;
   width: 60px;
   height: 60px;
@@ -531,13 +655,26 @@ div.col-lg-6
   background-position: center;
   background-size: 50px auto;
   left: auto;
-  top: 135px;
+  top: 90px;
   right: -60px;
   width: 60px;
   height: 60px;
   position: absolute;
 }
-
+.social.instagram
+{
+  background-image: url('images/instagram.png');
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px auto;
+  left: auto;
+  top: 93px;
+  right: -60px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
 /* ------------------------------------------------- NAVBAR ------------------------------------ */
 .nav-image{
   width: 10vh;

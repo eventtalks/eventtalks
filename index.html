@@ -16,6 +16,7 @@
     <!-- Font Awesome /icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+<script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
@@ -100,218 +101,170 @@
 	</section>
 	<br>
 
-<!-- 	<section id="picNvid">
-		<div class="container">
-			<div class="row" id="pictureRow">
-				<div class="col-lg-4 justify-content-md-center" id="picInfo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. </div>
-				<div class="col-lg-8"></div>
-			</div>
-			<br>
-			<div class="row" id="picture2ndRow">
-				<div class="col-lg-8"></div>
-				<div class="col-lg-4 justify-content-md-center" id="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. </div>
-				
-			</div>			
-		</div>
-	</section> -->
-<!-- 	<section class="home-grid">
-		<div class="container">
-			<div class="d-flex flex-row">
-
-				<div class="hoverpop fc-flex" id="">
-					
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="card-link">Card link</a>
-					    <a href="#" class="card-link">Another link</a>
-					  </div>
-					  
-								
-				</div>
-				<div class="hoverpop sc-flex" id="imgVid">
-					<a href=""><img src="assets/images/playbtn.png" id="imgVidbtn"></a>
-				</div>
-				<div class="justify-content-center hoverpop tc-flex" id="pahiramLogo">
-					<h6> PARTNER </h6>
-					<a href=""><img src="assets/images/pahiramLogo2.png" style=""></a>
-				</div>	
-
-			</div>	
-			<div class="d-flex flex-row">
-
-				<div class="cardEvent hoverpop fc-flex" id="pahiramLogo2">
-					<h6> PARTNER </h6>
-					<a href=""><img src="assets/images/pahiramLogo2.png" style=""></a>
-				</div>	
-				<div class="hoverpop sc-flex" id="imgVid2">
-					<div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> to the good old days</div>
-				</div>
-				<div class="cardEvent2 hoverpop tc-flex bg-dark" id="">
-					
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-
-					  </div>
-								
-				</div>				
-
-			</div>		
-			<div class="d-flex flex-row">
-
-				<div class="hoverpop fc-flex" id="imgWcat">
-					<div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> to the good old days</div>
-				</div>
-				<div class="cardEvent3 hoverpop sc-flex bg-primary" id="">
-					
-					  <div class="card-body">
-					    <h5 class="card-title">Card title</h5>
-					    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk ofdadadadadadada the card's content.</p>
-					  </div>
-								
-				</div>			
-
-				<div class="cardEvent hoverpop tc-flex" id="pahiramLogo3">
-					<h6> PARTNER </h6>
-					<a href=""><img src="assets/images/pahiramLogo2.png" style=""></a>
-				</div>	
-			</div>			
-			<div class="d-flex flex-row">
-
-				<div class="cardEvent hoverpop fc-flex" id="pahiramLogo4">
-					<h6> PARTNER </h6>
-					<a href=""><img src="assets/images/pahiramLogo2.png" style=""></a>
-				</div>	
-				<div class="cardEvent hoverpop fc-flex" id="pahiramLogo5">
-					<h6> PARTNER </h6>
-					<a href=""><img src="assets/images/pahiramLogo2.png" style=""></a>
-				</div>
-			</div>						
-		</div>
-	</section>
- -->
- 	<section id="home-cards">
+	<!--------------------  NEW CARDS GRID -------------------->
+	<section id="home-cards">
 		<div class="container" id="home-container">
-			<div class="card-columns" id="cardCol">
-			  <!-- FIRST CARD W/ EVENT DETAILS -->
-			  <div class="card hoverpop border-light bg-light">
-			    <div class="card-body">
-			    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-			    <h5 class="card-title"> New Technology </h5>
+			<!-- 1ST CARD GROUP  -->
+			<div class="card-group" id="f-card-group">
+				<!-- FIRST CARD W/ EVENT DETAILS -->
+				<div class="col-lg-3 col-md-3">
+				<div class="card hoverpop border-light bg-light" id="f-event-d">
+				    <div class="card-body">
+				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
+				    <h5 class="card-title"> New Technology </h5>
 
-			    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
-			     8:00 am - 9:00 am
-			    </small>	
-				
-		        <p class="text-muted mt-3 float-right">
-		        	<small> View more ..</small>
-		        </p>  
-			    </div>
-			    <a href="#" class="social twitter"></a>
-			  </div>
-			  <!-- SECOND CARD W/ SPONSOR -->
-			  <div class="card mt-0 text-center hoverpop border-dark">
-	 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-			 	<div class="card-body">
-			 		<img class="card-img-top p-4 sponsorImg" src="assets/images/google.png" alt="Card image cap">		
-			 	</div>  
+				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     8:00 am - 9:00 am
+				    </small>	
+					
+			        <p class="text-muted mt-5 float-right">
+			        	<small><a href="#" class="card-link hg"> View more ..</a></small>
+			        </p>  
+				    </div>
+				    <a href="#" class="social twitter"></a>
+				</div>
+				</div>
+				 <!-- 5th CARD W/ IMG AND ITS CATEGORY  -->
+				<div class="col-lg-6 col-md-6">
+			  	<div class="card hoverpop border-light" id="f-img-cat">
+				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
+				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
+
+			  	</div>
+			  	</div>
+			  	<!-- 8th CARD W/ SPONSOR -->
+			  	<div class="col-lg-3 col-md-3">
+			  	<div class="card text-center hoverpop border-dark" id="f-sponsor">
+		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
+				 	 <div class="card-body">
+		  		    <img class="card-img-top p-3 f-sponsorImg" src="assets/images/micromax.webp" 
+		  		    alt="Card image cap">	
+		  		    </div>
+		  		    <a href="#" class="social facebook"></a>
+			  	</div>
+			  	</div>
+			</div>
+			<!-- 2ND CARD GROUP  -->
+			<div class="card-group" id="s-card-group">
+
+				<!-- SECOND CARD W/ SPONSOR -->
+				<div class="col-lg-3 col-md-3">
+			  	<div class="card mt-0 text-center hoverpop border-dark" id="fsponsor">
+		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
+				 	<div class="card-body">
+				 		<img class="card-img mt-5 p-4 sponsorImg" src="assets/images/google.png" alt="Card image cap">		
+				 	</div>  
 	  		    
-			  </div>
-			  <!-- THIRD CARD W/ IMG AND ITS CATEGORY -->
-			  <div class="card hoverpop border-light">
-			    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
-			    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
+			  	</div>
+			  	</div>
+				<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
+				<div class="col-lg-6 col-md-6">
+				<div class="card hoverpop border-light" id="cardImgWbtn">
+				    <a href="">
+				    
+				    <img class="playbtn" src="assets/images/playbtn.png">		    
+				    </a>
+				</div>
+				</div>
+	 		    <!-- 9th CARD W/ EVENT DETAILS -->
+	 		    <div class="col-lg-3 col-md-3">
+			    <div class="card hoverpop border-light" id="s-event-d">
+				  	<img class="card-img-top" src="assets/images/eventbonfire.jpg">
+				    <div class="card-body">
+				   			    
+				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
+				    <h5 class="card-title"> New Technology </h5>
 
-			  </div>
-			  <!-- FOURTH CARD WITH BG OF IMG AND PLAYBTN -->
-			  <div class="card text-white text-center hoverpop border-light">
-	 				<a href="">
-	 					<img class="card-img imgWbtn" src="assets/images/hotEvents.png" alt="Card image">
-	 			    	<img class="playbtn" src="assets/images/playbtn.png">
-	 			    </a>
-			  </div>
-			  <!-- 5th CARD W/ IMG AND ITS CATEGORY  -->
-			  <div class="card hoverpop border-light">
-			    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
-			    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
+				    <small class="text-muted"><i class="fas fa-moon mr-0 fa-lg"> </i>	   
+				     6:00 pm - 8:00 pm
+				    </small>	
+					
+			        <p class="text-muted mt-3 float-right">
+			        	<small><a href="#" class="card-link hg"> View more ..</a></small>
+			        </p>  
+				    </div>
+				</div>
+				</div>			  	
+			</div>
+			<!-- 3RD CARD GROUP  -->
+			<div class="card-group" id="t-card-group">
 
-			  </div>
-			<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
-			  <div class="card hoverpop border-light" id="cardImgWbtn">
-			    <a href="">
-			    
-			    <img class="playbtn" src="assets/images/playbtn.png">		    
-			    </a>
-			  </div>
+				<!-- THIRD CARD W/ IMG AND ITS CATEGORY -->
+				<div class="col-lg-3 col-md-3">
+			  	<div class="card hoverpop border-light" id="f-img-cat">
+				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" id="s-img-cat" alt="Card image cap">
+				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
 
-			  <!-- 7th CARD W/ EVENT DETAILS -->
-			  <div class="card hoverpop border-light " id="card7th">
-			    <div class="card-body">
+			  	</div>
+			  	</div>
+				<!-- 7th CARD W/ EVENT DETAILS -->
+				<div class="col-lg-6 col-md-6">
+				<div class="card hoverpop border-light " id="card7th">
+				    <div class="card-body">
 
-			    <h6 class="card-subtitle mb-2  text-muted">MON 23/Exhibit</h6>
-			    <h5 class="card-title"> New Technology </h5>
+				    <h6 class="card-subtitle mb-2  text-muted">MON 23/Exhibit</h6>
+				    <h5 class="card-title"> New Technology </h5>
 
-			    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
-			     8:00 am - 9:00 am
-			    </small>	
-				
-		        <p class="text-muted mt-3 float-right">
-		        	<small> View more ..</small>
-		        </p>  
-			    </div>
-			  </div>
+				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     8:00 am - 9:00 am
+				    </small>	
+					
+			        <p class=" text-muted mt-5 float-right">
+			        	<small> <a href="#" class="card-link hg"> View more ..</a></small>
+			        </p>  
+			        
+				    </div>
+				</div>
+				</div>
+				<!-- 10th CARD W/ SPONSOR -->
+				<div class="col-lg-3 col-md-3">
+				<div class="card mt-0 text-center hoverpop border-dark" id="t-sponsor">
+		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
+				 	<div class="card-body">
+		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
+		  		    </div>
+		  		    <a href="#" class="social instagram"></a>
+				</div>	
+				</div>							
+			</div>
+			<!-- --------- 4TH CARD GROUP --------- -->
+			<div class="card-group" id="fo-card-group">
+				<!-- 10th CARD W/ SPONSOR -->
+				<div class="col-lg-3 col-md-3">
+				<div class="card mt-0 text-center hoverpop border-dark" id="fo-sponsor">
+		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
+				 	<div class="card-body">
+		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
+		  		    </div>
 
-			  <!-- 8th CARD W/ SPONSOR -->
-			  <div class="card mt-0 text-center hoverpop border-dark">
-	 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-			 	 <div class="card-body">
-	  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/micromax.webp" 
-	  		    alt="Card image cap">	
-	  		    </div>
-	  		    <a href="#" class="social facebook"></a>
-			  </div>
-	 		  <!-- 9th CARD W/ EVENT DETAILS -->
-			  <div class="card hoverpop border-light" id="card9th">
-			  	<img class="card-img-top" src="assets/images/eventbonfire.jpg">
-			    <div class="card-body">
-			   			    
-			    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-			    <h5 class="card-title"> New Technology </h5>
+				</div>	
+				</div>				
+				<!-- 10th CARD W/ SPONSOR -->
+				<div class="col-lg-3 col-md-3">
+				<div class="card mt-0 text-center hoverpop border-dark" id="fi-sponsor">
+		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
+				 	<div class="card-body">
+		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
+		  		    </div>
 
-			    <small class="text-muted"><i class="fas fa-moon mr-0 fa-lg"> </i>	   
-			     6:00 pm - 8:00 pm
-			    </small>	
-				
-		        <p class="text-muted mt-3 float-right">
-		        	<small> View more ..</small>
-		        </p>  
-			    </div>
-			  </div>
+				</div>	
+				</div>	
 
-			  <!-- 10th CARD W/ SPONSOR -->
-			  <div class="card mt-0 text-center hoverpop border-dark">
-	 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-			 	<div class="card-body">
-	  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
-	  		    </div>
-
-			  </div>
-
+				<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
+				<div class="col-lg-5 col-md-5">
+				<div class="card hoverpop border-light" id="cardImgWbtn2">
+				    <a href="">
+				    
+				    <img class="playbtn" src="assets/images/playbtn.png">		    
+				    </a>
+				</div>
+				</div>							
 			</div>
 		</div>
 	</section>
+
 	<br>
-<!-- 	FOUR PANEL TIMELINE  -->
+	<!-- ---------------	FOUR PANEL TIMELINE ---------- -->
 	<section id="timeline">	  
 	    <div class="tl-item">
 		    <a href="hotevents.html"><div class="tl-bg" style="background-image: url('assets/images/hotEvents.png')"></div>
@@ -368,170 +321,22 @@
 	  	</div>
 	</section>
 
-<!--  NEW CARDS GRID -->
-	<section>
-		<div class="container p-3">
-			<div class="card-group">
-			  <div class="card" id="fscard">
-
-			  </div>
-			  <div class="card">
-			    <img class="card-img-top" src="..." alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img class="card-img-top" src="..." alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			    </div>
-			  </div>
-
-			</div>
-			<div class="card-group">
-			  <div class="card" id="Sscard">
-
-			  </div>
-			  <div class="card">
-			    <img class="card-img-top" src="..." alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <img class="card-img-top" src="..." alt="Card image cap">
-			    <div class="card-body">
-			      <h5 class="card-title">Card title</h5>
-			      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-			      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-			    </div>
-			  </div>
-
-			</div>
-		</div>
-	</section>
 	<br>
-
-	<section id="home-cards">
-		<div class="container" id="home-container">
-			<!-- 1ST CARD GROUP  -->
-			<div class="card-group" id="f-card-group">
-				<!-- FIRST CARD W/ EVENT DETAILS -->
-				<div class="col-lg-3 col-md-3">
-				<div class="card hoverpop border-light bg-light" id="f-event-d">
-				    <div class="card-body">
-				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
-
-				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
-				     8:00 am - 9:00 am
-				    </small>	
-					
-			        <p class="text-muted mt-3 float-right">
-			        	<small> View more ..</small>
-			        </p>  
-				    </div>
-				    <a href="#" class="social twitter"></a>
-				</div>
-				</div>
-				 <!-- 5th CARD W/ IMG AND ITS CATEGORY  -->
-				<div class="col-lg-6 col-md-6">
-			  	<div class="card hoverpop border-light" id="f-img-cat">
-				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
-				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
-
-			  	</div>
-			  	</div>
-			  	<!-- 8th CARD W/ SPONSOR -->
-			  	<div class="col-lg-3 col-md-3">
-			  	<div class="card mt-0 text-center hoverpop border-dark" id="f-sponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	 <div class="card-body">
-		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/micromax.webp" 
-		  		    alt="Card image cap">	
-		  		    </div>
-		  		    <a href="#" class="social facebook"></a>
-			  	</div>
-			  	</div>
-			</div>
-			<!-- 2ND CARD GROUP  -->
-			<div class="card-group" id="s-card-group">
-				<!-- SECOND CARD W/ SPONSOR -->
-			  	<div class="card mt-0 text-center hoverpop border-dark" id="fsponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-				 		<img class="card-img-top p-4 sponsorImg" src="assets/images/google.png" alt="Card image cap">		
-				 	</div>  
-	  		    
-			  	</div>
-				<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
-				<div class="card hoverpop border-light" id="cardImgWbtn">
-				    <a href="">
-				    
-				    <img class="playbtn" src="assets/images/playbtn.png">		    
-				    </a>
-				</div>
-	 		    <!-- 9th CARD W/ EVENT DETAILS -->
-			    <div class="card hoverpop border-light" id="card9th">
-				  	<img class="card-img-top" src="assets/images/eventbonfire.jpg">
-				    <div class="card-body">
-				   			    
-				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
-
-				    <small class="text-muted"><i class="fas fa-moon mr-0 fa-lg"> </i>	   
-				     6:00 pm - 8:00 pm
-				    </small>	
-					
-			        <p class="text-muted mt-3 float-right">
-			        	<small> View more ..</small>
-			        </p>  
-				    </div>
-				</div>			  	
-			</div>
-			<!-- 3RD CARD GROUP  -->
-			<div class="card-group">
-				<!-- THIRD CARD W/ IMG AND ITS CATEGORY -->
-				<div class="card hoverpop border-light">
-				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
-				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div> <span class="card-subtitle"> To The old Good Days </span></div>	
-
-				</div>
-				<!-- 7th CARD W/ EVENT DETAILS -->
-				<div class="card hoverpop border-light " id="card7th">
-				    <div class="card-body">
-
-				    <h6 class="card-subtitle mb-2  text-muted">MON 23/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
-
-				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
-				     8:00 am - 9:00 am
-				    </small>	
-					
-			        <p class="text-muted mt-3 float-right">
-			        	<small> View more ..</small>
-			        </p>  
-				    </div>
-				</div>
-				<!-- 10th CARD W/ SPONSOR -->
-				<div class="card mt-0 text-center hoverpop border-dark">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
-		  		    </div>
-
-				</div>								
+	<section>
+		<div class="container">
+			<div class="embed-responsive embed-responsive-16by9">
+			  <iframe class="embed-responsive-item" src="hotevents.html" allowfullscreen></iframe>
 			</div>
 		</div>
 	</section>
+	<br>	
 
+	
+	<script>
+		ScrollReveal().reveal('.card-group');
+		// ScrollReveal().reveal('.f-card-group'{ delay: 500 });
+		// ScrollReveal().reveal('.f-card-group'{ delay: 2000 });
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
