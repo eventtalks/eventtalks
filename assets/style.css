@@ -429,7 +429,7 @@ body {
 #s-event-d
 {
   margin-top: -52px;
-  max-height: 310px;
+  max-height: 320px;
   background-color: #9ea3a7;
   color: black;
 
@@ -895,3 +895,43 @@ a[ id= "contacto" ]:target ~ #main article.panel {
   max-height: 300px;
   max-width: 350px;
 }
+
+
+/*--------------------MEDIA AT SAMPLE EVE*/
+
+@media(max-width:400px)
+{
+  #sampleEve
+  {
+    height: 300px;
+  }
+  #conFlui
+  {
+    height: 400px;
+  }
+  #embDiv
+  {
+    height: 300px;
+  }
+}
+@media(max-width:614px)
+{
+  #sampleEve
+  {
+    height: 500px;
+    width: 100%;  
+  }
+  #conFlui
+  {
+    height: 500px;
+     width: 100%; 
+  }
+  #embDiv
+  {
+    height: 500px;
+     width: 100%; 
+  }
+}
+
+
+
