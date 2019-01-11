@@ -232,6 +232,15 @@ input::-webkit-input-placeholder {
   margin-bottom: 1rem;
   color: white; /*CATEGORY TITLE TEXT COLOR*/
 }
+@media (max-width: 930px)
+{
+  .tl-year 
+  {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
 
 .tl-bg {
   -webkit-transform: translate3d(0, 0, 0);
