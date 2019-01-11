@@ -400,6 +400,7 @@ input::-webkit-input-placeholder {
 
 .about-mission-content{
   margin-top: 4%;
+
 }
 
 .about-define1{
@@ -455,6 +456,64 @@ input::-webkit-input-placeholder {
   min-height: 100vh;
   background: rgba(0,0,0,0.7);
 }
+
+
+}
+
+.about-define1{
+  font-size: 24px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-define2{
+  font-size: 24px;
+  text-align: justify;
+  color: white;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-team-title{
+  font-size: 40px;
+  padding-top: 6rem;
+  text-align: center;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+.about-missionVision{
+  font-size: 18px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-mission-img{
+  width: 45vw;
+  margin-top: 5%;
+}
+
+.about-cover-content{
+ padding-top: 10rem;
+ text-align: center;
+}
+
+.content-padding{
+  padding: 4rem 4rem;
+}
+
+.about-dark{
+  min-width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
 
 /* ----------------------- PARTNERS ---------------------------*/
 /*PARTNERS IMAGE*/
@@ -606,7 +665,11 @@ input::-webkit-input-placeholder {
 /*Contact Us TEXT*/
 .contact-title{
   padding-top: 10%;
+
   text-align: middle;
+
+  text-align: left;
+
   color: white;
   font-size: 60px;
   font-family: 'Raleway';
@@ -785,9 +848,30 @@ label{
   font-family: 'Raleway';
 }
 
+
 .event{ /*PARALLAX*/
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/new_statesman_events.jpg") center center no-repeat;
   min-height: 80vh;
+
+.first-playlist-content{
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+#first-playlist{
+  background-color: #ededed;
+}
+
+.first-playlist-top{
+  padding: 8rem 4rem 5rem 4rem;
+}
+
+.event{ /*PARALLAX*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/new_statesman_events.jpg") center center no-repeat;
+  min-height:90vh;
+  min-width: 100%;
+
   color: white;
   background-size: cover;
   text-align: center;
@@ -804,6 +888,20 @@ label{
 .event-editors, .event-heard{
   padding-top: 0;
 }
+
+.first-playlist{
+  color: #1C1C1C;
+}
+
+.event-newest1 a, .event-newest2 a, .event-newest3 a, .event-newest4 a, .event-newest5 a, .event-newest6 a, .event-newest7 a, .event-newest8 a, .event-newest9 a{
+  color: white;
+}
+
+.event-newest1 a:hover, .event-newest2 a:hover, .event-newest3 a:hover, .event-newest4 a:hover, .event-newest5 a:hover, .event-newest6 a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 
 .event-newest1{
   color: white;
@@ -866,6 +964,7 @@ label{
   color: #1C1C1C;
   font-size: 35px;
 }
+
 
 .card-sub-title{
   padding: 10rem 1rem 1rem 2rem;
@@ -952,6 +1051,108 @@ label{
   width: 100%;
 }
 
+
+
+.card-sub-title{
+  padding: 10rem 1rem 1rem 2rem;
+}
+.event-time-display{
+  padding: 1%;
+  margin-bottom: 1rem;
+  background-color: #1C1C1C;
+  width: 11%;
+  text-align: center;
+}
+
+.event-sub-little{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width:8%;
+  padding-left: 0;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.event-sub-editor{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 10%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.event-sub-heard{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 12%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 100;
+}
+
+.floating-menu {
+    font-family: sans-serif
+    padding: 5px;
+    width: 4vw;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    z-index: 100;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    cursor: pointer;
+  }
+
+/* --------------------------------------- CAROUSEL --------------------------*/
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/*@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 50%;
+  }
+}*/
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+/* --------------------------------------- CAROUSEL TRENDING--------------------------*/
+.carousel1 {
+  width: 100%;
+}
+
+
 .slide-box1 {
   display: flex;
   justify-content: space-between;
@@ -988,6 +1189,118 @@ label{
   border-radius: .5rem;
 }
 
+
+/* -------------------------------------TALKS LAYOUT--------------------*/
+.talks-details{
+  padding: 2rem 1rem 1rem 2rem;
+  margin-left: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.talks-details1{
+  padding: 0rem 0rem 0rem 0rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.talks-details-small{
+  padding: 0rem 1rem 1rem 2rem;
+  margin-left: 1rem;
+  text-align: justify;
+  font-size: 14px;
+  color: #696969;
+}
+
+.talks-details-RT{
+  font-size: 18px;
+  padding: 0rem 1rem 0rem 2rem;
+  margin-left: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.talks-details-RT1{
+  font-size: 18px;
+  padding: 2rem 0rem 0rem 0rem;
+}
+
+.talks-author-name{
+  font-size: 18px;
+  padding: 0rem;
+  text-align: left;
+}
+
+.talks-button{
+  margin-left: 3rem;
+}
+
+.talks-btn{
+  border: 1px #48647C solid !important;
+  color: #1C1C1C;
+}
+
+.talks-btn:hover{
+  background-color: #48647C;
+  color: white;
+  border: 1px white solid !important;
+}
+
+.talks-hr{
+  margin-left: 2rem;
+  background-color: #A4A4A4; 
+  height: 2px; 
+  border: 0;
+}
+
+.talks-author{
+  width: 12vw;
+  padding-left: 2rem;
+}
+
+.talks-sub-title{
+  padding: 1rem;
+  font-size: 20px;
+  margin-left: 1rem;
+  color: #808080;
+  text-align: justify;
+}
+
+.talks-tab{
+  font-size: 20px;
+  color: #808080;
+  text-align: justify;
+}
+
+.talks-next-vid{
+  width: 15vw;
+  padding-bottom: 2rem;
+}
+.talks-next-vid-small{
+  margin-top: -1rem;
+  text-align: left;
+  font-size: 15px;
+  color: #696969;
+}
+
+.talks-views{
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+.talks-loc, .talks-loc:hover, .talks-loc:active{
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.talks-other-details{
+  padding: 0rem 1rem 1rem 1rem;
+  font-size: 14px;
+  text-align: left;
+}
+
+
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
   background: #1C1C1C;
@@ -1011,6 +1324,13 @@ label{
   width: 35px;
   display: inline-block;
   margin-right: 2%;
+
+}
+
+.footer-socialM:hover{
+  background-color: #0B2C5B;
+  border-radius: 50%;
+
 }
 
 /* -------------------------------- FOOTER TEXT TITLE-------------------------------*/
@@ -1036,13 +1356,21 @@ label{
 
 /* ---------------------------------- FOOTER BUTTON ---------------------------------*/
 .footer-button{
+
   color: black;
+
+  color: white;
+
   font-size: 13px;
   padding: 7px 20px 7px 20px;
   font-family: 'Raleway', sans-serif;
 }
 .footer-button:hover{
+
   color: black;
+
+  color: white;
+
   background-color: 
 }
 
