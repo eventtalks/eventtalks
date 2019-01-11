@@ -6,11 +6,7 @@
 
 /* Add animation to "page content" */
 #loader{
-
-  /*background-color: #F9D4FF;*/
-
   background-color: #F9D4FF;
-
 }
 .img-loader{
   display: block;
@@ -26,14 +22,10 @@
   animation-name: animatebottom;
   animation-duration: 1s
 }
-
-
-
 #myDiv {
   display: none;
   text-align: center;
 }
-
 .scale-in-hor-left{-webkit-animation:scale-in-hor-left .9s cubic-bezier(.25,.46,.45,.94) both;animation:scale-in-hor-left .9s cubic-bezier(.25,.46,.45,.94) both
 }
 
@@ -51,16 +43,9 @@
  * ---------------------------------------------- */
 
 @-webkit-keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes slide-in-fwd-center{0%{-webkit-transform:translateZ(-1400px);transform:translateZ(-1400px);opacity:0}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
-
 </style>
 </head>
 <body onload="myFunction()" style="margin:0;">
-
-<div id="loader"><img class="img-loader" src="assets/images/mic.gif"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text in my newly loaded page..</p>
 
 <div id="loader" class="scale-in-hor-left"><img class="img-loader" src="assets/images/mic.gif"></div>
 
@@ -172,7 +157,6 @@
         </div>
       </div>
   </section>
-
 </div>
 
 <script>
