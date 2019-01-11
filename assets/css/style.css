@@ -1146,11 +1146,31 @@ label{
   padding: 3rem;
 }
 
-.event-main-img{
+.venue-main-img{
   width: 100%;
     height: 20vw;
     /*padding: 1rem;*/
     object-fit: cover;
+    background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+}
+
+.venue-sub-title{
+  color: #1C1C1C;
+  font-size: 35px;
+}
+
+.venue-title{
+  padding-top: 10%;
+  text-align: left;
+  color: white;
+  font-size: 60px;
+  font-family: 'Raleway';
+}
+
+.venue-place-title{
+  margin-top: -4rem;
+  color: white;
+  padding-bottom: 1rem;
 }
 
 /* -------------------------------- FOOTER -------------------------------*/
