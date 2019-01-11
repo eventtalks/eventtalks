@@ -8,6 +8,7 @@
 
 html,body{
   height: 100%;
+  width: 100%;
 }
 
 
@@ -215,6 +216,7 @@ input::-webkit-input-placeholder {
   font-weight: normal;
 }
 .tl-year {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -224,6 +226,14 @@ input::-webkit-input-placeholder {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
+        @media(max-width: 930px)
+        {
+          .tl-year
+          {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+          }
+        }
 .tl-year p {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 1.728rem;
@@ -390,6 +400,7 @@ input::-webkit-input-placeholder {
 
 .about-mission-content{
   margin-top: 4%;
+
 }
 
 .about-define1{
@@ -445,6 +456,64 @@ input::-webkit-input-placeholder {
   min-height: 100vh;
   background: rgba(0,0,0,0.7);
 }
+
+
+}
+
+.about-define1{
+  font-size: 24px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-define2{
+  font-size: 24px;
+  text-align: justify;
+  color: white;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-team-title{
+  font-size: 40px;
+  padding-top: 6rem;
+  text-align: center;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+.about-missionVision{
+  font-size: 18px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-mission-img{
+  width: 45vw;
+  margin-top: 5%;
+}
+
+.about-cover-content{
+ padding-top: 10rem;
+ text-align: center;
+}
+
+.content-padding{
+  padding: 4rem 4rem;
+}
+
+.about-dark{
+  min-width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
 
 /* ----------------------- PARTNERS ---------------------------*/
 /*PARTNERS IMAGE*/
@@ -596,7 +665,11 @@ input::-webkit-input-placeholder {
 /*Contact Us TEXT*/
 .contact-title{
   padding-top: 10%;
+
+  text-align: middle;
+
   text-align: left;
+
   color: white;
   font-size: 60px;
   font-family: 'Raleway';
@@ -775,6 +848,11 @@ label{
   font-family: 'Raleway';
 }
 
+
+.event{ /*PARALLAX*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/new_statesman_events.jpg") center center no-repeat;
+  min-height: 80vh;
+
 .first-playlist-content{
   text-align: justify;
   line-height: 1.5;
@@ -793,6 +871,7 @@ label{
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/new_statesman_events.jpg") center center no-repeat;
   min-height:90vh;
   min-width: 100%;
+
   color: white;
   background-size: cover;
   text-align: center;
@@ -822,6 +901,7 @@ label{
   color: white;
   text-decoration: none;
 }
+
 
 .event-newest1{
   color: white;
@@ -884,6 +964,94 @@ label{
   color: #1C1C1C;
   font-size: 35px;
 }
+
+
+.card-sub-title{
+  padding: 10rem 1rem 1rem 2rem;
+}
+.event-time-display{
+  padding: 1%;
+  margin-bottom: 0%;
+  background-color: #1C1C1C;
+  width: 11%;
+  text-align: center;
+}
+
+.about-sub-little{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 7%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.about-sub-editor{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 10%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.about-sub-heard{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 11%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 100;
+}
+
+/* --------------------------------------- CAROUSEL --------------------------*/
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/*@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 50%;
+  }
+}*/
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+/* --------------------------------------- CAROUSEL TRENDING--------------------------*/
+.carousel1 {
+  width: 100%;
+}
+
+
 
 .card-sub-title{
   padding: 10rem 1rem 1rem 2rem;
@@ -984,6 +1152,7 @@ label{
   width: 100%;
 }
 
+
 .slide-box1 {
   display: flex;
   justify-content: space-between;
@@ -1019,6 +1188,7 @@ label{
   padding: 20px;
   border-radius: .5rem;
 }
+
 
 /* -------------------------------------TALKS LAYOUT--------------------*/
 .talks-details{
@@ -1130,6 +1300,7 @@ label{
   text-align: left;
 }
 
+
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
   background: #1C1C1C;
@@ -1153,11 +1324,13 @@ label{
   width: 35px;
   display: inline-block;
   margin-right: 2%;
+
 }
 
 .footer-socialM:hover{
   background-color: #0B2C5B;
   border-radius: 50%;
+
 }
 
 /* -------------------------------- FOOTER TEXT TITLE-------------------------------*/
@@ -1183,13 +1356,21 @@ label{
 
 /* ---------------------------------- FOOTER BUTTON ---------------------------------*/
 .footer-button{
+
+  color: black;
+
   color: white;
+
   font-size: 13px;
   padding: 7px 20px 7px 20px;
   font-family: 'Raleway', sans-serif;
 }
 .footer-button:hover{
+
+  color: black;
+
   color: white;
+
   background-color: 
 }
 
