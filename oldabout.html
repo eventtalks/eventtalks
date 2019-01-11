@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
 	
 	<!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=Concert+One|Raleway|Titan+One|Quicksand|Questrial|Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Raleway|Titan+One|Quicksand" rel="stylesheet">
 
 	<!-- PAGE ICON -->
 	<link rel="icon" href="assets/images/mic.png">
@@ -39,15 +39,19 @@
 				        	<a class="nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
 				      	</li>
 				      	<li class="nav-item dropdown homeLI">
-				      		<a class="nav-link dropdown-toggle" href="event.html">Event <b class="caret"></b></a>
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          Events
+					        </a>
 					        <div class="dropdown-menu homeLI1" aria-labelledby="navbarDropdown">
-					          <a class="dropdown-item" href="venue.html">Venue</a>
-					          <a class="dropdown-item" href="schedule.html">Schedule</a>
-					          <a class="dropdown-item" href="speaker.html">Speaker</a>
+					          <a class="dropdown-item" href="#">Venue</a>
+					          <a class="dropdown-item" href="#">Schedule</a>
+					          <a class="dropdown-item" href="#">Speaker</a>
 					        </div>
 					      </li>
 				      	<li class="nav-item dropdown homeLI">
-				      		<a class="nav-link dropdown-toggle active" href="about.html">About <b class="caret"></b></a>
+					        <a class="nav-link dropdown-toggle active" href="about" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					          About
+					        </a>
 					        <div class="dropdown-menu homeLI1" aria-labelledby="navbarDropdown">
 					          <a class="dropdown-item" href="#MissionAndVision">Mission and Vision</a>
 					          <a class="dropdown-item" href="#WhatWeDo">What We Do</a>
@@ -82,10 +86,10 @@
 		                    <div class="container">
 		                      <div class="row">
 		                        <div class="col-md-12 about-cover-content">
-		                        	<h1 class="about-home"><b>About</b></h1>
-			                		<p class="about-cover-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi atque<br> ipsa, maxime tempore qui, nisi quisquam voluptates porro.</p>
-
-		                           <a href="#AboutDefine"><button id="btn-round" class="btn btn-outline-dark btn-round"><img src="assets/images/news.png" id="mic-down" class="mic-down"></button></a>
+		                        	<!-- <img src="https://image.flaticon.com/icons/svg/912/912264.svg" class="about-image" alt="speaker icon"> -->
+		                        	<h1 class="display-5 about-home"><b>We create and update, you listen and grow better.</h1>
+			                		<p class="lead about-cover-text" style="color: white;">Our team creates an abundant and amazing event talks that may help you to grow in any matter.</p></b>
+		                           <a href="#MissionAndVision"><button id="btn-round" class="btn btn-outline-dark btn-round"><img src="assets/images/news.png" id="mic-down" class="mic-down"></button></a>
 		                        </div>
 		                      </div>
 		                    </div>
@@ -98,207 +102,150 @@
 	    </div>
     </section>
    
-	<section id="AboutDefine" class="about-define"> 
+	<section id="MissionAndVision" class="about-missionVision"> 
         <div class="about-wrapper">
 	            <div class="row">
-	              <!--------------------------------------------------- DEFINE -------------------------------------->
-	              	<div class="col-md-12 about-define-content">
-	                	<p class="about-define1">
-	                		Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-	                		Dolore cum illum praesentium, debitis,<br> 
-	                		ipsam eligendi quasi sit tempore recusandae,<br> 
-	                		aut dolorum aspernatur nostrum eius,<br> 
-	                		asperiores dicta id, fugiat itaque ipsum dolor sit amet.<br> 
-	                		consectetur adipisicing elit soloremque <br>
-	                		nulla mollitia rem odit recusandae fugiat animi sequi architecto,<br> 
-	                		ex soluta quia corrupti illum a ipsam accusantium,<br> 
-	                		corporis consequuntur rerum illo!</p>
+	              <!--------------------------------------------------- MISSION -------------------------------------->
+	              	<div class="col-md-6">
+	                	<h1 class="display-5 about-title1">Mission</h1>
+	                		<hr class="about-hr">
+	                			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum illum praesentium, debitis, ipsam eligendi quasi sit tempore recusandae, aut dolorum aspernatur nostrum eius, asperiores dicta! Possimus id, fugiat itaque.</p>
+	                		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nulla mollitia rem odit recusandae fugiat animi sequi architecto, ex soluta quia corrupti illum a ipsam accusantium, corporis consequuntur rerum illo!</p>
 	              	</div>
+	              <!--------------------------------------------------- VISION -------------------------------------->
+	              	<div class="col-md-6">
+	                	<h1 class="display-5 about-title1">Vision</h1>
+	                		<hr class="about-hr">
+	                			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore cum illum praesentium, debitis, ipsam eligendi quasi sit tempore recusandae, aut dolorum aspernatur nostrum eius, asperiores dicta! Possimus id, fugiat itaque.</p>
+	                		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque nulla mollitia rem odit recusandae fugiat animi sequi architecto, ex soluta quia corrupti illum a ipsam accusantium, corporis consequuntur rerum illo!</p>
+	              	</div>
+
 	            </div>
 
 	              	<div class="row">
 	              		<div class="offset-3 col-md-6">
-	              			<center><a href="#MissionAndVision"><button class="btn btn-outline-dark btn-round1"><img src="assets/images/news1.png" class="mic-down" onmouseover="this.src='assets/images/news.png';" onmouseout="this.src='assets/images/news1.png';"></button></a></center>
+	              			<center><a href="#WhatWeDo"><button class="btn btn-outline-dark btn-round1"><img src="assets/images/news1.png" class="mic-down" onmouseover="this.src='assets/images/news.png';" onmouseout="this.src='assets/images/news1.png';"></button></a></center>
 	              		</div>
 	              	</div>
         </div>
-    </section>
-
-    <section id="MissionAndVision" class="about-missionVision">
-    	<div class="about-dark">
-	        <div class="about-wrapper">
-	        		<center>
-	        			<img src="assets/images/soundwave.jpg" class="about-title-image">
-	        			<h1 class="about-title2">Mission & Vision</h1>
-	        			<!-- <img src="assets/images/soundwave.jpg" class="about-title-image" style=" transform: rotate(180deg)"> -->
-	        		</center>
-		            <div class="row">
-		              <!--------------------------------------------------- MISSION -------------------------------------->
-		              	<div class="col-md-12 about-define-content">
-		                	<p class="about-define2">
-		                		Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-		                		Dolore cum illum praesentium, debitis,
-		                		ipsam eligendi quasi sit tempore recusandae, 
-		                		aut dolorum aspernatur nostrum eius,
-		                		asperiores dicta id, fugiat itaque ipsum dolor sit amet. <br><br>
-
-		              <!--------------------------------------------------- VISION -------------------------------------->
-		                		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		                		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		                		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		                		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		                		cillum dolore eu fugiat nulla pariatur.</p>
-		              	</div>
-		            </div>
-
-		              	<div class="row">
-		              		<div class="offset-3 col-md-6">
-		              			<center><a href="#WhatWeDo"><button id="btn-round" class="btn btn-outline-dark btn-round"><img src="assets/images/news.png" id="mic-down" class="mic-down"></button></a></center>
-		              		</div>
-		              	</div>
-		              	<br>
-	        </div>
-	    </div>
     </section>
 
     <section id="WhatWeDo" class="about-whatWedo">
         <div class="about-wrapper">
-          		<center>
-	        			<img src="assets/images/soundwave.jpg" class="about-title-image">
-	        			<h1 class="about-title">What We Do</h1>
-	        			<!-- <img src="assets/images/soundwave.jpg" class="about-title-image" style=" transform: rotate(180deg)"> -->
-	        		</center>
-		            <div class="row about-create">
-		              <!--------------------------------------------------- CREATE -------------------------------------->
-		              	<div class="offset-2 col-md-3 pr-0">
-		              		<img class="about-img-whatwedo" src="https://img.freepik.com/free-vector/information-search_23-2147501898.jpg?size=338&ext=jpg" alt="">
-		              	</div>
-		              	<div class="col-md-6 pl-0">
-		              		<h5 class="about-whatwedo-title">CREATING FABOLOUS EVENTS</h5>
-		              		<p class="about-whatwedo-content">
-		                		Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-		                		Dolore cum illum praesentium, debitis.</p>
-		              	</div>
-		            </div>
+          		<center><h1 class="about-title1">What We Do</h1></center>
+          		<hr class="about-hr">
+          		<br>
+          		<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium molestiae minus beatae iure quidem explicabo deleniti eos, ipsam molestias earum minima laborum laboriosam sit temporibus reprehenderit atque nulla nesciunt necessitatibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quaerat commodi obcaecati magnam iusto beatae magni ut nobis ex hic aut nam deleniti quos laboriosam necessitatibus expedita, deserunt maiores optio.</p>
+          		<br>
+	            <div class="card-deck">
+			        <!--------------------------------------------------- CREATE  -------------------------------------->
+					<div class="card card-whatwedo">
+					    <img class="card-img-top about-img-whatwedo mx-auto" src="assets/images/notepad.png" alt="Create icon">
+						    <div class="card-body">
+						     	<center><h5 class="card-title">Create</h5></center>
+						      		<p class="card-text whatwedo-content">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						      		<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+						    </div>
+					</div>
 
-		            <div class="row about-create">
-		              <!--------------------------------------------------- ORGANIZING -------------------------------------->
-		              	<div class="offset-2 col-md-3 pr-0">
-		              		<img class="about-img-whatwedo" src="https://img.freepik.com/free-vector/information-search_23-2147501898.jpg?size=338&ext=jpg" alt="">
-		              	</div>
-		              	<div class="col-md-6 pl-0">
-		              		<h5 class="about-whatwedo-title">ORGANIZING AN EXTRAORDINARY TALKS</h5>
-		              		<p class="about-whatwedo-content">
-		                		Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-		                		Dolore cum illum praesentium, debitis.</p>
-		              	</div>
-		            </div>
+			        <!--------------------------------------------------- ORGANIZE  -------------------------------------->
+					<div class="card card-whatwedo">
+					    <img class="card-img-top about-img-whatwedo mx-auto" src="assets/images/desktop.png" alt="Card image cap">
+					    	<div class="card-body">
+					      		<center><h5 class="card-title">Organize</h5></center>
+					      			<p class="card-text whatwedo-content">This card has supporting text below as a natural lead-in to additional content.</p>
+					      			<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+					    	</div>
+					</div>
 
-		            <div class="row about-create">
-		              <!--------------------------------------------------- RECONNECTING -------------------------------------->
-		              	<div class="offset-2 col-md-3 pr-0">
-		              		<img class="about-img-whatwedo" src="https://img.freepik.com/free-vector/information-search_23-2147501898.jpg?size=338&ext=jpg" alt="">
-		              	</div>
-		              	<div class="col-md-6 pl-0">
-		              		<h5 class="about-whatwedo-title">RECONNECTING</h5>
-		              		<p class="about-whatwedo-content">
-		                		Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
-		                		Dolore cum illum praesentium, debitis.</p>
-		              	</div>
-		            </div>
+			        <!--------------------------------------------------- UPDATE  -------------------------------------->
+					<div class="card card-whatwedo">
+					    <img class="card-img-top about-img-whatwedo mx-auto" src="assets/images/student.png" alt="Card image cap">
+					    	<div class="card-body">
+					      		<center><h5 class="card-title">Update</h5></center>
+					      			<p class="card-text whatwedo-content">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+					      			<!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+					    	</div>
+					</div>
 
-		            <br><br>
+				</div><!-- card deck--->
 
 					<div class="row">
 	              		<div class="offset-3 col-md-6">
-	              			<center><a href="#Partners"><button class="btn btn-outline-dark btn-round1"><img src="assets/images/news1.png" class="mic-down" onmouseover="this.src='assets/images/news.png';" onmouseout="this.src='assets/images/news1.png';"></button></a></center>
+	              			<center><a href="#OurTeam"><button class="btn btn-outline-dark btn-round1"><img src="assets/images/news1.png" class="mic-down" onmouseover="this.src='assets/images/news.png';" onmouseout="this.src='assets/images/news1.png';"></button></a></center>
 	              		</div>
 	              	</div>
-	        </div>
-	    </section>
-
-        <section id="Partners" class="about-partners"> 
-        <div class="about-wrapper">
-        		<center>
-        			<img src="assets/images/soundwave.jpg" class="about-title-image">
-        			<h1 class="about-title">Sponsors & Partners</h1>
-        			<!-- <img src="assets/images/soundwave.jpg" class="about-title-image" style=" transform: rotate(180deg)"> -->
-        		</center>
-        		<br><br>
-        		
-            	<div class="row">
-	            	<div class="col">
-				    	<img src="assets/images/amazon.png" class="about-img" alt="amazon">
-				    </div>
-				    <div class="col">
-				    	<img src="assets/images/bridgestone.png" class="about-img" alt="bridgestone">
-				    </div>
-				    <div class="col">
-				    	<img src="assets/images/deloitte.png" class="about-img" alt="deloitte">
-				    </div>
-				    <div class="col">
-				    	<img src="assets/images/google.png" class="about-img" alt="google">
-				    </div>
-				    <div class="col">
-				     <img src="assets/images/ibm.png" class="about-img" alt="ibm">
-				    </div>
-			   	</div>
-
-			   	<div class="row">
-	            	<div class="col">
-			            <img src="assets/images/jpMorgan.png" class="about-img" alt="jpMorgan">
-				    </div>
-				    <div class="col">
-				    	<img src="assets/images/jj.png" class="about-img" alt="johnson and johnson">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/microsoft.png" class="about-img" alt="microsoft">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/micromax.png" class="about-img" alt="micromax">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/pepsico.png" class="about-img" alt="pepsico">
-				    </div>
-			   	</div>
-
-			   	<div class="row">
-	            	<div class="col">
-			            <img src="assets/images/aditya.jpg" class="about-img" alt="aditya">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/bajaj.png" class="about-img" alt="bajaj">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/dhl.png" class="about-img" alt="dhl">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/lg.png" class="about-img" alt="lg">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/hero.jpg" style="width: 60%; display: inline-block; margin-right: 10%; padding: 2rem 2rem;" alt="hero">
-				    </div>
-			   	</div>
-
-			   	<div class="row">
-	            	<div class="col">
-			            <img src="assets/images/htc.png" class="about-img" alt="htc">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/ibm.png" class="about-img" alt="ibm">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/mcdonald.png" class="about-img" alt="mcdonalds">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/ey.png" style="width: 60%; display: inline-block; margin-right: 10%; padding: 2rem 2rem;" alt="ey">
-				    </div>
-				    <div class="col">
-			            <img src="assets/images/puma.png" style="width: 60%; display: inline-block; margin-right: 10%; padding: 2rem 2rem;" class="about-img" alt="puma">
-				    </div>
-			   	</div>
         </div>
     </section>
+
+    <section id="OurTeam" class="about-ourTeam">
+      	<div class="container">
+        	<center><h1 class="about-title">Our Team</h1></center>
+        		<hr class="about-hr">
+       	</div>
+        	<div class="card-group">
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://entertainmentasap.blob.core.windows.net/albums/2018/08/081818-YassiKid/Yassi-AP-38.jpg" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://4jeaedr.files.wordpress.com/2014/11/tumblr_l6uri1sp9w1qbbrp6o1_500.jpg" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://pbs.twimg.com/media/DAmxMjvXsAEMX7B.jpg" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://i.pinimg.com/236x/e6/78/03/e67803fc1bbee5edcdc92b07fa0f63be--enrique-gil-fun.jpg" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTCdH6KaQN272d7fLjgf3hv6mZgC5Qoqj_RgrFGoglaLnLtyxS" alt="">
+			  	</div>
+			</div>
+
+			<div class="card-group">
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="http://3.bp.blogspot.com/-mLDHE2dpjGU/U48ilIzlo9I/AAAAAAAAxbI/ox4a26ADjaQ/s1600/Screenshot_2014-06-04-21-41-21-1.png" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://lifestyle.abs-cbn.com/thumbnail.ashx?t=articles&w=1280&h=700&p=2664-banner_102716_3.png" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="https://pbs.twimg.com/media/DPIPs00VoAAw4Ny.jpg" alt="">
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<div class="card-body team-img" style="background-color: #48647C;">
+				      <h5 class="card-title">Join Us</h5>
+				    	<button class="btn btn-outline-dark">See current jobs</button>
+				    </div>
+			  	</div>
+			  	<div class="card" style="border: none;">
+			    	<img class="card-img-top team-img" src="" alt="">
+			  	</div>
+			</div>
+    </section>
+
+    <section id="Partners" class="about-partners"> 
+        <div class="about-wrapper">
+        	<div class="container">
+        	<center><h1 class="about-title">Sponsors & Partners</h1></center>
+        		<hr class="about-hr">
+       		</div>
+            <div class="row"><center>
+              <div class="col-md-10">
+                <img src="assets/images/amazon.png" class="about-img" alt="amazon">
+                <img src="assets/images/bridgestone.png" class="about-img" alt="bridgestone">
+                <img src="assets/images/deloitte.png" class="about-img" alt="deloitte">
+                <img src="assets/images/google.png" class="about-img" alt="google">
+                <img src="assets/images/ibm.png" class="about-img" alt="ibm">
+                <img src="assets/images/jpMorgan.png" class="about-img1" alt="jpMorgan">
+                <img src="assets/images/mcdonald.png" class="about-img1" alt="mcdonalds">
+                <img src="assets/images/microsoft.png" class="about-img1" alt="microsoft">
+                <img src="assets/images/micromax.png" class="about-img1" alt="micromax">
+                <img src="assets/images/pepsico.png" class="about-img1" alt="pepsico">
+              </center></div>
+            </div>
+        </div>
+    </section>
+
 
 	<footer id="footer-main">
       <div class="container">

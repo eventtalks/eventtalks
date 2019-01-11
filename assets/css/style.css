@@ -8,26 +8,21 @@
 
 html,body{
   height: 100%;
+  width: 100%;
 }
+
+
 
 /* ------------------------------------------------- NAVBAR ------------------------------------ */
 .nav-image{
-	width: 10vh;
-	-webkit-transform: scaleX(-1);
-  	transform: scaleX(-1);
-  	margin-right: -10%;
+  width: 10vh;
+  -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    margin-right: -10%;
 }
 .nav-title{
-	font-family: 'Concert One', cursive;
-	font-size: 40px;
-}
-.nav-motto{
-	font-size: 11px;
-	font-family: 'Raleway', sans-serif;
-	color: black;
-}
-.navbar{
-	position: fixed;
+  font-family: 'Concert One', cursive;
+  font-size: 40px;
 }
 
 /* ------------------------------------------- NAVBAR MENU ------------------------------------- */
@@ -39,86 +34,97 @@ html,body{
 }
 .homeLI a:hover:not(.active) {
   color: white;
+}
+
+.homeLI1 a {
+  font-size: 16px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #1C1C1C;
+}
+.homeLI1 a:hover:not(.active) {
+  color: white;
   background-color: #48647C;
 }
+
 a.active {
   color: white;
 }
-.container-fluid{
-	padding: 0;
-	margin: 0;
-}
-.nav-default{
-	background-color: #48647C;
-	width: 100%;
+
+/* ------------------------------------------- ON SCROLL NAVBAR MENU ------------------------------------- */
+.navbar-solid {
+  background-color: #48647C;
+  top:0px;
+  z-index:100;
+  width: 100%;
 }
 
 /* ------------------------------------------- NAVBAR SEARCH BAR------------------------------ */
 input[type=search] {
-	-webkit-appearance: textfield;
-	-webkit-box-sizing: content-box;
-	font-family: inherit;
-	font-size: 100%;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  font-family: inherit;
+  font-size: 100%;
 }
 input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
-	display: none; 
+  display: none; 
 }
 
 input[type=search] {
-	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
-	border: solid 1px #ccc;
-	padding: 9px 10px 9px 32px;
-	width: 55px;
-	margin-right: 30px;
-	
-	-webkit-border-radius: 10em;
-	-moz-border-radius: 10em;
-	border-radius: 10em;
-	
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	transition: all .5s;
+  background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+  border: solid 1px #ccc;
+  padding: 9px 10px 9px 32px;
+  width: 55px;
+  margin-right: 30px;
+  
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+  
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
 }
 input[type=search]:focus {
-	width: 130px;
-	background-color: #fff;
-	border-color: #66CC75;
-	
-	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
-	box-shadow: 0 0 5px rgba(109,207,246,.5);
+  width: 130px;
+  background-color: #fff;
+  border-color: #66CC75;
+  
+  -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+  box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
 
 input:-moz-placeholder {
-	color: #999;
+  color: #999;
 }
 input::-webkit-input-placeholder {
-	color: #999;
+  color: #999;
 }
 
 /*------------------------------------- Demo 2 CLASS -- STILL FOR SEARCH BAR ---------------------------------*/
 #demo-2 input[type=search] {
-	width: 20px;
-	padding-left: 10px;
-	color: transparent;
-	cursor: pointer;
+  width: 20px;
+  padding-left: 10px;
+  color: transparent;
+  cursor: pointer;
 }
 #demo-2 input[type=search]:hover {
-	background-color: #fff;
+  background-color: #fff;
 }
 #demo-2 input[type=search]:focus {
-	width: 200px;
-	padding-left: 32px;
-	color: #000;
-	background-color: #fff;
-	cursor: auto;
+  width: 200px;
+  padding-left: 32px;
+  color: #000;
+  background-color: #fff;
+  cursor: auto;
 }
 #demo-2 input:-moz-placeholder {
-	color: transparent;
+  color: transparent;
 }
 #demo-2 input::-webkit-input-placeholder {
-	color: transparent;
+  color: transparent;
 }
 
 /* -------------------------------------------- EVENT TALKS CATEGORY ------------------------------------------*/
@@ -210,6 +216,7 @@ input::-webkit-input-placeholder {
   font-weight: normal;
 }
 .tl-year {
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -219,6 +226,14 @@ input::-webkit-input-placeholder {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
+        @media(max-width: 930px)
+        {
+          .tl-year
+          {
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+          }
+        }
 .tl-year p {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   font-size: 1.728rem;
@@ -257,6 +272,8 @@ input::-webkit-input-placeholder {
     display: block;
     overflow: hidden;
     opacity: 0;
+    /*background: transparent;
+    border: none;*/
 }
 
 .dropdown:hover .dropdown-menu {
@@ -264,80 +281,712 @@ input::-webkit-input-placeholder {
     opacity: 1;
 }
 
+/* ------------------------------------------ REGISTER BUTTON ---------------------------------------*/
+.register-button{
+  color: white;
+  border: 1px solid white;
+  padding: 10px 15px 10px 15px;
+}
+.register-button:hover{
+  background-color: #48647C;
+}
+
 /* ---------------------------------------------- ABOUT CONTENT----------------------------------------*/
 .about-hr{
-	background-color: #A4A4A4; 
-	height: 2px; 
-	border: 0;
+  background-color: #A4A4A4; 
+  height: 2px; 
+  border: 0;
 }
 
 .about-content{
-	position: relative;
-	top: 20vh;
+  position: relative;
+  top: 20vh;
 }
 
 /* for <p> alignment */
-.lead, .card-text{
-	text-align: justify;
+.lead{
+  font-size: 24px;
+  text-align: justify;
+  color: #2E2E2E;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-home{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-align: left;
 }
 
 /* for mission vision partners about us TEXT */
 .about-title{
-	font-family: 'Titan One', cursive;
+  color: #1C1C1C;
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.about-missionVision, .about-partners{
-	padding: 6rem 6rem;
+.about-title2{
+  color: white;
+  font-size: 35px;
+  font-family: 'Raleway', sans-serif;
 }
 
+.about-title-image{
+  width: 10%;
+  margin-top: 2rem;
+}
+
+.about-title1{
+  color: #1C1C1C;
+  font-size: 45px;
+  font-family: 'Titan One', cursive;
+}
+
+.about-cover-text{
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.btn-round{
+  margin-top: 5%;
+  border-radius: 50%;
+  padding: 20px;
+  width: 70px;
+  border: 1px solid white;
+}
+
+.mic-down:hover{
+    transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    -webkit-transform:rotate(135deg);
+}
+
+.mic-down{
+  width: 100%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+          transition:         transform .4s ease-in-out;
+}
+
+.btn-round1{ /*mission vision*/
+  margin-top: -10%;
+  border-radius: 50%;
+  padding: 20px;
+  width: 70px;
+  border: 1px solid black;
+}
+
+.about-define, .about-partners{
+  padding: 6rem 6rem;
+}
+
+.about-whatWedo{
+  padding: 5rem 3rem 7rem 3rem;
+}
+
+.about-missionVision{
+  padding: 5rem 3rem 5rem 3rem;
+}
+
+.about-define-content{
+  padding: 3rem 6rem 6rem 6rem;
+}
+
+.about-team-content{
+  padding: 3rem 6rem 6rem 6rem;
+}
+
+.about-mission-content{
+  margin-top: 4%;
+}
+
+.about-define1{
+  font-size: 24px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-define2{
+  font-size: 24px;
+  text-align: justify;
+  color: white;
+  line-height: 2;
+  /*letter-spacing: 1px;*/
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-team-title{
+  font-size: 40px;
+  padding-top: 6rem;
+  text-align: center;
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+
+.about-missionVision{
+  font-size: 18px;
+  text-align: justify;
+  color: #2E2E2E;
+  line-height: 2;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.about-mission-img{
+  width: 45vw;
+  margin-top: 5%;
+}
+
+.about-cover-content{
+ padding-top: 10rem;
+ text-align: center;
+}
+
+.content-padding{
+  padding: 4rem 4rem;
+}
+
+.about-dark{
+  min-width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.7);
+}
+
+/* ----------------------- PARTNERS ---------------------------*/
 /*PARTNERS IMAGE*/
 .about-img{
-	width: 13%;
-	display: inline-block;
-	margin-right: 5%;
-	padding-top: 2%;
-}
-.about-img1{
-	width: 13%;
-	display: inline-block;
-	margin-right: 5%;
-	padding-top: 5%;
+  width: 70%;
+  display: inline-block;;
+  padding: 2rem 2rem;
 }
 
-
-/* ---------------------------------------------- ABOUT PARALLAX -------------------------*/
-.about{
-  opacity: 1;
-  background-color: black;
-  background: url("https://cdn-images-1.medium.com/max/1600/1*e5flIoQf_jfcYYoSD0MkyA.jpeg") center center no-repeat;
+#Partners{
+  background-color: white;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#MissionAndVision{ /*PARALLAX*/
+    opacity: 1;
+  background-color: black;
+  background: url("http://benoit-cote.com/wp-content/uploads/2015/08/banner-team.jpg") center center no-repeat;
+  min-height: 800px;
   color: white;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.dark{
+  min-width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.8);
+}
+
+/* ---------------------------------------------- ABOUT PARALLAX --------------------------------------------*/
 /*FOR DARKER COLOR OF BACKGROUND*/
 #dark{
   width: 100%;
   min-height: 100vh;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
-
-/* ---------------------------------------------- OUR TEAM -------------------------*/
-.about-ourTeam{ /*PARALLAX*/
+/* Video Parallax Section*/
+.ParallaxVideo{ 
+  height: 50px;
+  padding-bottom: 50px;
+  padding-top: 50px; 
+}
+.ParallaxVideo video{ 
+  min-width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top:0;
+  z-index: -9999;
+}
+.ParallaxVideo h3 {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.parallax2 {
   opacity: 1;
-  background-color: black;
-  background: url("https://prod-marketing-greenhouse.global.ssl.fastly.net/blog-assets/Hands_Huddle.jpg?mtime=20160426024504") center center no-repeat;
-  min-height: 800px;
-  padding: 6rem 6rem;
+  min-height: 600px; 
+  min-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+#AboutDefine{
+  background-color: white;
+  min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* ---------------------------------------------- WHAT WE DO -------------------------*/
+#WhatWeDo{
+  background-color: white;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.about-img-whatwedo{
+  width: 70%;
+}
+
+.about-create{
+  /*background-color: #ededed;*/
+  padding: 3rem;
+}
+
+.about-whatwedo-title{
+  font-family: 'Questrial', sans-serif;
+  font-size: 26px;
+  line-height: 1.5;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.about-whatwedo-content{
+  font-size: 16px;
+  text-align: justify;
+  color: #7e7e7e;
+  font-family: 'Muli', sans-serif;
+}
+
+/* ---------------------------------------------- OUR TEAM -------------------------*/
+.about-ourTeam{ /*PARALLAX*/
+  opacity: 1;
+  background-color: white;
+  min-height: 800px;
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-img{
+    width: 100%;
+    height: 20vw;
+    /*padding: 1rem;*/
+    object-fit: cover;
+}
+
+
+/* ----------------------------------- CONTACT US --------------------------------*/
+.contact{ /*PARALLAX*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://static1.squarespace.com/static/50e73071e4b0d5ee8b74f584/t/5a0df5170d9297da4e01c3b8/1510864152047/contact_us.jpg?format=2500w") center center no-repeat;
+  min-height: 80vh;
+  color: white;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Contact Us TEXT*/
+.contact-title{
+  padding-top: 10%;
+  text-align: middle;
+  color: white;
+  font-size: 60px;
+  font-family: 'Raleway';
+}
+
+.contact-title1{
+  color: #1C1C1C;
+  font-size: 30px;
+  font-family: 'Raleway';
+}
+
+.contact-title2{
+  color: white;
+  font-size: 25px;
+  font-family: 'Raleway';
+}
+
+.contact-info{
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+  margin-left: 25%;
+  margin-top: -15%;
+  padding-bottom: 1rem;
+}
+
+.contact-info1{
+  font-size: 12px;
+  text-align: justify;
+  color: white;
+  margin-left: 25%;
+  margin-top: -10%;
+  padding-bottom: 1rem;
+}
+
+
+.contact-dark{
+  min-width: 100%;
+  min-height: 60vh;
+}
+
+.contact-form{
+  /*padding: 4em 4em 4em 0em;*/
+  padding: 4em;
+}
+
+.contact-details{
+  padding-top: 4rem;
+}
+.contact-icon{
+  width: 15%;
+}
+
+.contact-form1{
+  padding: 4em;
+  background: #1C4975;
+  border-radius: 0 2% 2% 0;
+}
+
+.contact-form1{
+  padding: 4em;
+  background: #1C4975;
+  border-radius: 0 2% 2% 0;
+}
+
+.lead1{
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.contactus{
+  padding: 0;
+  margin-bottom: 6rem;
+}
+
+label{
+  color: #1C1C1C;
+}
+
+.selectpicker{
+  padding: 12.5% 6% 12.5% 6%;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.contact-mailImg{
+  width: 10%;
+  margin-top: -1.5%;
+}
+
+/*.contact-sendbtn{
+  margin-top: 3%;
+  border-radius: 50%;
+  padding: 10px;
+  width: 0px;
+  background-color: #48647C;
+  border: 1px solid white;
+}
+
+.contact-sendbtn:hover{
+  background-color: white;
+  border: 1px solid #48647C;
+}*/
+
+.contact-sendbtn{
+  margin-top: 5%;
+  border-radius: 50%;
+  padding: 20px;
+  width: 70px;
+  background-color: #48647C;
+  border: 1px solid white;
+}
+
+.contact-sendbtn:hover, .contact-sendbtn:active, .contact-sendbtn:visited{
+  background-color: white !important;
+  border: white !important;
+}
+
+.contact-sent:hover{
+    transform: scale(3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.contact-sent{
+  width: 100%;
+  -webkit-transition: -webkit-transform .4s ease-in-out;
+          transition:         transform .4s ease-in-out;
+}
+
+.contactus{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -7%;
+  background: white;
+  border-radius: 2%;
+  min-height: 60vh;
+  -moz-box-shadow: 0 0 10px gray;
+  -webkit-box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 10px gray;
+}
+
+.contact-socialM{
+  width: 35px;
+  display: inline-block;
+  margin-right: 10%;
+}
+
+.contact-socialM1{
+  width: 35px;
+  display: inline-block;
+}
+
+/* ------------------------------------ EVENTS -----------------------------*/
+.event-top-button{
+  color: white;
+  border-color: white;
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
+
+.event-top-button:active{
+  color: white;
+  background-color: black;
+}
+.event-top-button:focus, .event-top-button:visited{
+  color: white;
+  background-color: #48647C;
+}
+
+.event-title{
+  padding-top: 10%;
+  text-align: left;
+  color: white;
+  font-size: 60px;
+  font-family: 'Raleway';
+}
+
+.event{ /*PARALLAX*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.newstatesman.com/sites/all/themes/creative-responsive-theme/images/new_statesman_events.jpg") center center no-repeat;
+  min-height: 80vh;
+  color: white;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.event-home, .event-trending, .event-editors, .event-heard{
+  padding: 3rem;
+}
+.event-trending{
+  padding-top: 7rem;
+}
+.event-editors, .event-heard{
+  padding-top: 0;
+}
+
+.event-newest1{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://d1w9csuen3k837.cloudfront.net/Pictures/1280x720/9/8/5/136985_shutterstock_203936089.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest2{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://www.absoluteeventsbycorrine.com/blog/wp-content/uploads/2015/06/speaker-tips-corporate-events-event-planner-nj-ny-absolute-events-by-corrine.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest3{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://blogmedia.evbstatic.com/wp-content/uploads/wpmulti/sites/8/2017/02/21105943/speakers-for-your-event.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest4{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('http://1.bp.blogspot.com/-02_MnZggZDs/UFdrodIYAYI/AAAAAAAAEL0/AetugPYo130/s1600/shutterstock_95880652.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest5{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmKV89tpl1S4G1xjKXGj-w1WN2jxgvhoKZZyFX_xmpXrma7jd8');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest6{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://sg.fiverrcdn.com/photos/107126469/original/dc209f61ad13899bb88e77381ec5a2f579400614.jpg?1516953523');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest7{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://static1.squarespace.com/static/586fdf4bb3db2b72176ebabe/t/58b739cd29687f370cca8a67/1488402902713/');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest8{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://brickworksbuildingproducts.com.au/wp-content/uploads/2018/02/33434296351_4b86b9603b_k.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.event-newest9{
+  color: white;
+  background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('https://static1.squarespace.com/static/56f427cde321409ed97a8cf4/t/5991f8b1db29d6da88dc7e65/1502739039672/TedEx.jpg?format=1500w');
+  background-position: center;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.event-sub-title{
+  color: #1C1C1C;
+  font-size: 35px;
+}
+
+.card-sub-title{
+  padding: 10rem 1rem 1rem 2rem;
+}
+.event-time-display{
+  padding: 1%;
+  margin-bottom: 0%;
+  background-color: #1C1C1C;
+  width: 11%;
+  text-align: center;
+}
+
+.about-sub-little{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 7%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.about-sub-editor{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 10%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 1;
+}
+.about-sub-heard{
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  width: 11%;
+  padding: 5px;
+  margin-bottom: -1%;
+  z-index: 100;
+}
+
+/* --------------------------------------- CAROUSEL --------------------------*/
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+/*@media (min-width: 992px)
+{
+  .slide-box img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 50%;
+  }
+}*/
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
+
+/* --------------------------------------- CAROUSEL TRENDING--------------------------*/
+.carousel1 {
+  width: 100%;
+}
+
+.slide-box1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .slide-box1 img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .slide-box1 img {
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .slide-box1 img {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+.carousel-caption1 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: .5rem;
+}
 
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
@@ -352,49 +1001,49 @@ input::-webkit-input-placeholder {
   color: white;
 }
 .footer-hr{
-	background-color: #A4A4A4; 
-	height: 1px; 
-	border: 0;
+  background-color: #A4A4A4; 
+  height: 1px; 
+  border: 0;
 }
 
 /* -------------------------------- FOOTER SOCIAL MEDIA ICONS-------------------------------*/
 .footer-socialM{
-	width: 35px;
-	display: inline-block;
-	margin-right: 2%;
+  width: 35px;
+  display: inline-block;
+  margin-right: 2%;
 }
 
 /* -------------------------------- FOOTER TEXT TITLE-------------------------------*/
 .footer-title{
-	font-size: 14px;
- 	text-decoration: none;
-	font-family: 'Raleway', sans-serif;
-	color: #A4A4A4;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #A4A4A4;
 }
 /* -------------------------------- FOOTER TEXT OTHER TEXT -------------------------------*/
 .footer-titleUP{
-	font-size: 12px;
- 	text-decoration: none;
-	font-family: 'Raleway', sans-serif;
-	color: #A4A4A4;
+  font-size: 12px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  color: #A4A4A4;
 }
 
 .footer-titleMENU{
-	font-size: 12px;
-	font-family: 'Raleway', sans-serif;
-	color: white;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
 }
 
 /* ---------------------------------- FOOTER BUTTON ---------------------------------*/
 .footer-button{
-	color: black;
-	font-size: 13px;
-	padding: 7px 20px 7px 20px;
+  color: black;
+  font-size: 13px;
+  padding: 7px 20px 7px 20px;
   font-family: 'Raleway', sans-serif;
 }
 .footer-button:hover{
-	color: black;
-	background-color: 
+  color: black;
+  background-color: 
 }
 
 /* ---------------------------------- BACK TO TOP BUTTON ---------------------------------*/
@@ -439,6 +1088,77 @@ input::-webkit-input-placeholder {
 .cd-top:hover {
   background-color: #e86256;
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .modal-fullscreen-xs-down {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-xs-down .modal-dialog {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-fullscreen-xs-down .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+}
+@media (max-width: 991px) {
+  .modal-fullscreen-sm-down {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-sm-down .modal-dialog {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-fullscreen-sm-down .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+}
+@media (max-width: 1199px) {
+  .modal-fullscreen-md-down {
+    padding: 0 !important;
+  }
+  .modal-fullscreen-md-down .modal-dialog {
+    width: 100%;
+    min-width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .modal-fullscreen-md-down .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+  }
+}
+.modal-fullscreen {
+  padding: 0 !important;
+}
+.modal-fullscreen .modal-dialog {
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.modal-fullscreen .modal-content {
+  height: auto;
+  min-height: 100%;
+  border: 0 none;
+  border-radius: 0;
 }
 
 @media only screen and (min-width: 768px) {
