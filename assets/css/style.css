@@ -234,6 +234,15 @@ input::-webkit-input-placeholder {
   margin-bottom: 1rem;
   color: white; /*CATEGORY TITLE TEXT COLOR*/
 }
+@media (max-width: 930px)
+{
+  .tl-year 
+  {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+  }
+}
+
 
 .tl-bg {
   -webkit-transform: translate3d(0, 0, 0);
@@ -1165,6 +1174,7 @@ ul.timeline > li:before {
     /*padding: 1rem;*/
     object-fit: cover;
     background: radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1));
+
 }
 
 .venue-sub-title{
@@ -1184,12 +1194,61 @@ ul.timeline > li:before {
   margin-top: -4rem;
   margin-left: -6%;
   color: white;
+
   width: 113%;
   padding-bottom: 1%;
   padding-left: 2rem;
   padding-top: 1%;
   background: rgba(0, 0, 0, 0.8);
+
+  padding-bottom: 1rem;
+
 }
+
+.venue-sub-title{
+  color: #1C1C1C;
+  font-size: 35px;
+}
+
+.venue-title{
+  padding-top: 10%;
+  text-align: left;
+  color: white;
+  font-size: 60px;
+  font-family: 'Raleway';
+}
+
+.venue-place-title{
+  margin-top: -4rem;
+  color: white;
+  padding-bottom: 1rem;
+}
+/* -------------------------------- SPEAKERS -------------------------------*/
+.speakers-home .card
+{
+/*  margin-right: 10px;
+  margin-left: 10px;*/
+
+}
+.speakers-home img
+{
+  height: 210px;  
+
+}
+
+.speakers-home .sub
+{
+  color: #48647c;
+}
+
+  @media (min-width: 576px)
+  {
+    .card-columns 
+    {
+      column-count: 3;
+    }    
+  }
+
 
 /* -------------------------------- FOOTER -------------------------------*/
 #footer-main{
