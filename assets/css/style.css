@@ -1198,7 +1198,16 @@ label{
 {
   color: #48647c;
 }
+.speakers-home .cards:hover
+{
+  opacity: 0.5;
+}
 
+.speakers-home a , h5
+{
+  text-decoration: none;
+  color: #111;
+}
   @media (min-width: 576px)
   {
     .card-columns 
