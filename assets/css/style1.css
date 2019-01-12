@@ -305,6 +305,24 @@
         -o-transition: transform 250ms ease-in-out;
         transition: transform 250ms ease-in-out;    
     }
+    /*---- HOVER EFFECT ON SPEAKERS PAGE --------*/
+    /*HOVER EFFECT ON CARDS*/
+    .speakers-home .card:hover 
+    {
+     
+        -webkit-transform: scale(1.1); 
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.06);
+        z-index: 99;
+    }
+    .hoverpopSP
+    {
+    
+          -webkit-transition: transform 250ms ease-in-out;
+        -o-transition: transform 250ms ease-in-out;
+        transition: transform 250ms ease-in-out;    
+    }
 
 /* ------------------------SOCIAL MEDIA ICON ----------------------*/
 .social.twitter
@@ -1086,6 +1104,26 @@ a[ id= "t-ti" ]:target ~ #main-ul li.timeline-item {
   background-repeat: no-repeat;
 
 }
+#main-ul-past
+{
+  overflow: hidden;
+  margin-top: 55px;
+  background-image: url('../images/pastbg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#main-ul-reco
+{
+  overflow: hidden;
+  margin-top: 55px;
+  background-image: url('../images/recommendbg.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
 
 .sidenav {
   height: 100%;
@@ -1386,4 +1424,41 @@ a[ id= "t-ti" ]:target ~ #main-ul li.timeline-item {
   border-radius: .5rem;
 }
 
+/*--------------- PERSONAL SPEAKERS PAGE -----------------*/
+.speaker_pic
+{
+    background-image: url("../images/bald.jpg");
+    background-attachment: fixed;
 
+    background-repeat: no-repeat;
+        
+    min-height: 650px;
+  
+    background-size: cover;
+  /* The image used */
+
+  /* Set a specific height */
+
+  
+  /* Create the parallax scrolling effect */
+
+}
+.speaker-name
+{
+  position: absolute;
+  margin-top: -65px;
+
+  font-size: 3.8rem;
+}
+.speaker-content
+{
+  margin-top: 100px;
+  position: relative;
+}
+.fasize
+{
+  font-size: 3rem;
+  float: right;
+  margin-top: -23px;
+
+}
