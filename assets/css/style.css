@@ -8,6 +8,8 @@
 
 html,body{
   height: 100%;
+
+  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -318,6 +320,7 @@ input::-webkit-input-placeholder {
 .about-title2{
   color: white;
   font-size: 35px;
+  padding-top: 3rem;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -404,7 +407,7 @@ input::-webkit-input-placeholder {
 .about-define2{
   font-size: 24px;
   text-align: justify;
-  color: white;
+  color: #1C1C1C;
   line-height: 2;
   /*letter-spacing: 1px;*/
   font-family: 'Quicksand', sans-serif;
@@ -440,11 +443,6 @@ input::-webkit-input-placeholder {
   padding: 4rem 4rem;
 }
 
-.about-dark{
-  min-width: 100%;
-  min-height: 100vh;
-  background: rgba(0,0,0,0.7);
-}
 
 /* ----------------------- PARTNERS ---------------------------*/
 /*PARTNERS IMAGE*/
@@ -463,60 +461,16 @@ input::-webkit-input-placeholder {
   background-size: cover;
 }
 
-#MissionAndVision{ /*PARALLAX*/
-    opacity: 1;
-  background-color: black;
-  background: url("http://benoit-cote.com/wp-content/uploads/2015/08/banner-team.jpg") center center no-repeat;
-  min-height: 800px;
-  color: white;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.dark{
-  min-width: 100%;
-  min-height: 100vh;
-  background: rgba(0,0,0,0.8);
-}
-
 /* ---------------------------------------------- ABOUT PARALLAX --------------------------------------------*/
-/*FOR DARKER COLOR OF BACKGROUND*/
-#dark{
-  width: 100%;
-  min-height: 100vh;
-  background: rgba(0,0,0,0.7);
-}
-/* Video Parallax Section*/
-.ParallaxVideo{ 
-  height: 50px;
-  padding-bottom: 50px;
-  padding-top: 50px; 
-}
-.ParallaxVideo video{ 
-  min-width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  top:0;
-  z-index: -9999;
-}
-.ParallaxVideo h3 {
-    color: #fff;
-    font-size: 76px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-}
-.parallax2 {
-  opacity: 1;
-  min-height: 600px; 
-  min-width: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+.about{ /*PARALLAX*/
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.plitvice-etnogarden.com/wp-content/uploads/2018/02/Etno-Garden-Plitvice-Lakes-Team-Building-ruke.jpg") center center no-repeat;
+  min-height: 80vh;
+  color: white;
   background-size: cover;
-} 
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
 
 #AboutDefine{
   background-color: white;
@@ -1051,6 +1005,12 @@ label{
   line-height: 1.5;
 }
 
+.talks-details-RT2{
+  font-size: 18px;
+  padding: 2rem 0rem 0rem 0rem;
+  text-align: left;
+}
+
 .talks-details-RT1{
   font-size: 18px;
   padding: 2rem 0rem 0rem 0rem;
@@ -1131,6 +1091,59 @@ label{
   text-align: left;
 }
 
+.talks-sched-title, .talks-sched-title:hover, .talks-sched-title:active{
+  color: #1C1C1C;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #48647C;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #48647C;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+
+/*.playlist-title{
+  margin-top: -20%;
+}*/
+.talks-sub-title1{
+  font-size: 16px;
+  color: #808080;
+  text-align: justify;
+}
+
+.talks-tab1{
+  color: #808080;
+  text-align: justify;
+}
+
 /* -------------------------------- VENUE -------------------------------*/
 .venue{ /*PARALLAX*/
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://cdn-images-1.medium.com/max/1200/1*CuzeZrIdyXXTgzaTqcTmJw.jpeg") center center no-repeat;
@@ -1169,8 +1182,13 @@ label{
 
 .venue-place-title{
   margin-top: -4rem;
+  margin-left: -6%;
   color: white;
-  padding-bottom: 1rem;
+  width: 113%;
+  padding-bottom: 1%;
+  padding-left: 2rem;
+  padding-top: 1%;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 /* -------------------------------- FOOTER -------------------------------*/
