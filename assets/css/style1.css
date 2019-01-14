@@ -1,3 +1,13 @@
+/*@import url('https://fonts.googleapis.com/css?family=Concert+One|Raleway|Titan+One|Quicksand');
+*/
+
+/*html,body{
+  height: 100%;
+
+  font-family: 'Quicksand', sans-serif;
+}*/
+
+
 /* --------------- HOME GRID CARDS ---------------------*/
 #home-cards
 {
@@ -1461,4 +1471,46 @@ a[ id= "t-ti" ]:target ~ #main-ul li.timeline-item {
   float: right;
   margin-top: -23px;
 
+}
+
+
+
+ /*------------------ INDEX CARDS COLUMNS --------------------------*/
+ #cards-cols
+ {
+  padding: 30px 30px;
+  background-color: #9BA9B6;
+ }
+ #cards-cols .card
+ {
+  
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+ }
+ #cards-cols .card-title
+ {
+  margin-top: 5px;
+  font-size: 1.3rem;
+  font-weight: bold;
+ }
+ #cards-cols .card-body
+ {
+  padding-right: 0px;
+  padding-left: 0px;
+
+ }
+
+ #cards-cols img 
+ {
+  max-height: 155px;
+  max-width: 100%;
+ }
+
+#cards-cols a 
+{
+  text-decoration: none;
+  color: #111;
 }

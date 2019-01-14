@@ -18,6 +18,9 @@
     <!-- Font Awesome /icons -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+	<!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Raleway|Titan+One|Quicksand" rel="stylesheet">
+
 	<style>
 	/* Add animation to "page content" */
 	#loader{
@@ -47,7 +50,7 @@
 
 <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 </head>
-<body onload="myFunction()">
+<body onload="myFunction()" style="font-family: 'Quicksand', sans-serif;">
 
 <div id="loader" class="slide-in-left"><img class="img-loader" src="assets/images/mic-short.gif"></div>
 
@@ -128,172 +131,131 @@
 			</div>
 		</div>
 	</section>
-	<br>
+
 
 	<!--------------------  NEW CARDS GRID -------------------->
-	<section id="home-cards">
-		<div class="container" id="home-container">
-			<!-- 1ST CARD GROUP  -->
-			<div class="card-group" id="f-card-group">
-				<!-- FIRST CARD W/ EVENT DETAILS -->
-				<div class="col-lg-3 col-md-3">
-				<div class="card hoverpop border-light bg-light" id="f-event-d">
-				    <div class="card-body">
-				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
 
-				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+	<!--------------------  NEW CARDS COLUMNS -------------------->
+	<section id="cards-cols">
+	<div class="container">
+		<div class="card-columns">
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/newtech.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">MON 22/Exhibit</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> Products Every Guy Wants </a></h5>
+		    	<small><i class="fas fa-sun mr-0 fa-lg"> </i>	   
 				     7:00 am - 9:00 am
-				    </small>	
-					
-			        <p class="text-muted mt-5 float-right">
-			        	<small><a href="#" class="card-link hg"> View more ..</a></small>
-			        </p>  
-				    </div>
-				    <a href="talks/affan_pemberton_lorem.html" class="social twitter"></a>
-				</div>
-				</div>
-				 <!-- 5th CARD W/ IMG AND ITS CATEGORY  -->
-				<div class="col-lg-6 col-md-6">
-			  	<div class="card hoverpop border-light" id="f-img-cat">
-				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" alt="Card image cap">
-				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div><a href="talks/affan_pemberton_lorem.html"> <span class="card-subtitle"> To The old Good Days </span></a></div>	
-
-			  	</div>
-			  	</div>
-			  	<!-- 8th CARD W/ SPONSOR -->
-			  	<div class="col-lg-3 col-md-3">
-			  	<div class="card text-center hoverpop border-dark" id="f-sponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	 <div class="card-body">
-		  		    <img class="card-img-top p-3 f-sponsorImg" src="assets/images/micromax.png" 
-		  		    alt="Card image cap">	
-		  		    </div>
-		  		    <a href="#" class="social facebook"></a>
-			  	</div>
-			  	</div>
-			</div>
-			<!-- 2ND CARD GROUP  -->
-			<div class="card-group" id="s-card-group">
-
-				<!-- SECOND CARD W/ SPONSOR -->
-				<div class="col-lg-3 col-md-3">
-			  	<div class="card mt-0 text-center hoverpop border-dark" id="fsponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-				 		<img class="card-img mt-5 p-4 sponsorImg" src="assets/images/google.png" alt="Card image cap">		
-				 	</div>  
-	  		    
-			  	</div>
-			  	</div>
-				<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
-				<div class="col-lg-6 col-md-6">
-				<div class="card hoverpop border-light" id="cardImgWbtn">
-				    <a href="talks/affan_pemberton_lorem.html">
-				    
-				    <img class="playbtn" src="assets/images/playbtn.png">		    
-				    </a>
-				</div>
-				</div>
-	 		    <!-- 9th CARD W/ EVENT DETAILS -->
-	 		    <div class="col-lg-3 col-md-3">
-			    <div class="card hoverpop border-light" id="s-event-d">
-
-				  	<img class="card-img-top" src="assets/images/eventbonfire.jpg">
-				    <div class="card-body">
-				   			    
-				    <h6 class="card-subtitle mb-2  text-muted">MON 22/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
-
-				    <small class="text-muted"><i class="fas fa-moon mr-0 fa-lg"> </i>	   
+				</small>	
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/advancetech.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">MON 22/Exhibit</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> Advance Tech Devices </a></h5>
+		    	<small><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     8:00 am - 11:00 am
+				</small>	
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/google.png" alt="Card image cap">
+		    <div class="card-body text-center">
+		      <span class="card-subtitle p-1 badge-dark">SPONSOR</span>
+		    
+		    </div>
+		  </div>		  
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/asapST.jpeg" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">MON 22/Studio Tours</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> TFC ASAP Expirience </a></h5>
+		    	<small><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     8:30 am - 3:30 pm
+				</small>	
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/micromax.png" alt="Card image cap">
+		    <div class="card-body text-center">
+		      <span class="card-subtitle p-1 badge-dark">SPONSOR</span>
+		    
+		    </div>
+		  </div>
+		  <div class="card p-3">
+		   <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">SAT 06/Party</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> Good Old Days </a></h5>
+		    	<small><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     10:00 am - 5:00 pm
+				</small>	
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/decoded.png" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">SUN 10/Workshop</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html">Digital Enlightenment </a></h5>
+		   	  
+		     	<small><i class="fas fa-sun mr-0 fa-lg"> </i>	   
+				     8:30 am - 3:30 pm
+				</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/rNm.webp" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">MON 11/Talks</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> The Science of Rick and Morty </a></h5>
+		   	  
+		     	<small><i class="fas fa-moon mr-0 fa-lg"> </i>	   
+				     7:00 pm - 8:30 pm
+				</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/eventbonfire.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">TUE 12/Talks</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> Nature is Speaking </a></h5>
+		   	  
+		     	<small><i class="fas fa-moon mr-0 fa-lg"> </i>	   
 				     6:00 pm - 8:00 pm
-				    </small>	
-					
-			        <p class="text-muted mt-3 float-right">
-			        	<small><a href="talks/affan_pemberton_lorem.html" class="card-link hg"> View more ..</a></small>
-			        </p>  
-				    </div>
-				</div>
-				</div>			  	
-			</div>
-			<!-- 3RD CARD GROUP  -->
-			<div class="card-group" id="t-card-group">
-
-				<!-- THIRD CARD W/ IMG AND ITS CATEGORY -->
-				<div class="col-lg-3 col-md-3">
-			  	<div class="card hoverpop border-light" id="f-img-cat">
-				    <img class="card-img-top imgCategory" src="assets/images/pastEvents.jpg" id="s-img-cat" alt="Card image cap">
-				    <div class="txt"><div class="txtcategory"><span class="p-1">Technology</span></div><a href="talks/affan_pemberton_lorem.html"> <span class="card-subtitle"> To The old Good Days </span></a></div>	
-
-			  	</div>
-			  	</div>
-				<!-- 7th CARD W/ EVENT DETAILS -->
-				<div class="col-lg-6 col-md-6">
-				<div class="card hoverpop border-light " id="card7th">
-				    <div class="card-body">
-
-				    <h6 class="card-subtitle mb-2  text-muted">MON 23/Exhibit</h6>
-				    <h5 class="card-title"> New Technology </h5>
-
-				    <small class="text-muted"><i class="fas fa-sun mr-0 fa-lg"> </i>	   
-				     8:00 am - 9:00 am
-				    </small>	
-					
-			        <p class=" text-muted mt-5 float-right">
-			        	<small> <a href="talks/affan_pemberton_lorem.html" class="card-link hg"> View more ..</a></small>
-			        </p>  
-			        
-				    </div>
-				</div>
-				</div>
-				<!-- 10th CARD W/ SPONSOR -->
-				<div class="col-lg-3 col-md-3">
-				<div class="card mt-0 text-center hoverpop border-dark" id="t-sponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
-		  		    </div>
-		  		    <a href="#" class="social instagram"></a>
-				</div>	
-				</div>							
-			</div>
-			<!-- --------- 4TH CARD GROUP --------- -->
-			<div class="card-group" id="fo-card-group">
-				<!-- 10th CARD W/ SPONSOR -->
-				<div class="col-lg-3 col-md-3">
-				<div class="card mt-0 text-center hoverpop border-dark" id="fo-sponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
-		  		    </div>
-
-				</div>	
-				</div>				
-				<!-- 10th CARD W/ SPONSOR -->
-				<div class="col-lg-3 col-md-3">
-				<div class="card mt-0 text-center hoverpop border-dark" id="fi-sponsor">
-		 			<span class="card-subtitle p-1 mt-0 badge-dark sponsor">SPONSOR</span> 
-				 	<div class="card-body">
-		  		    <img class="card-img-top p-4 sponsorImg" src="assets/images/pepsico.png" alt="Card image cap">	
-		  		    </div>
-
-				</div>	
-				</div>	
-
-				<!-- 6th CARD WITH BG OF IMG AND PLAYBTN 2-->
-				<div class="col-lg-5 col-md-5">
-				<div class="card hoverpop border-light" id="cardImgWbtn2">
-				    <a href="talks/affan_pemberton_lorem.html">
-				    
-				    <img class="playbtn" src="assets/images/playbtn.png">		    
-				    </a>
-				</div>
-				</div>							
-			</div>
+				</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/bajaj.png" alt="Card image cap">
+		    <div class="card-body text-center">
+		      <span class="card-subtitle p-1 badge-dark">SPONSOR</span>
+		    
+		    </div>
+		  </div>	
+		  <div class="card">
+		    <img class="card-img-top" src="assets/images/peptalks.jpg" alt="Card image cap">
+		    <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">WED 13/Talks</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> The Science of Peptalks </a></h5>
+		   	  
+		     	<small><i class="fas fa-moon mr-0 fa-lg"> </i>	   
+				     10:00 am - 1:00 pm
+				</small>
+		    </div>
+		  </div>		
+		  <div class="card p-3">
+		   <div class="card-body">
+		      <h6 class="card-subtitle  text-muted">WED 13/Exhibit</h6>
+		      <h5 class="card-title"><a href="talks/affan_pemberton_lorem.html"> The Dark Secret at the Heart of AI </a></h5>
+		    	<small><i class="fas fa-moon mr-0 fa-lg"> </i>	   
+				     8:00 pm - 10:00 pm
+				</small>	
+		    </div>
+		  </div>
 		</div>
+	</div>
 	</section>
 
-	<br>
 	<!-- ---------------	FOUR PANEL TIMELINE ---------- -->
 	<section id="timeline">	  
 	    <div class="tl-item">
@@ -350,8 +312,8 @@
 		    </div>
 	  	</div>
 	</section>
-	<br>	
 
+	<!-- ---------------	FOOTER  ---------- -->
 	<footer id="footer-main">
       <div class="container">
         <div class="row">
